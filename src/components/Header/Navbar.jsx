@@ -1,27 +1,46 @@
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    if (navRef.current) {
+      navRef.current.classList.toggle(styles.responsiveNav);
+    }
+  };
+
   return (
-    <nav className={styles.navbar}>
-      <ul className={styles.navbarList}>
-        <li>
+    <header className={styles.navbar}>
+      <nav ref={navRef} className={styles.list}>
+        <a>
           <Link to="/">Inicio</Link>
-        </li>
-        <li>
+        </a>
+        <a>
           <Link to="/about">Quienes somos</Link>
-        </li>
-        <li>
+        </a>
+        <a>
           <Link to="/news">Blog</Link>
-        </li>
-        <li>
+        </a>
+        <a>
           <Link to="/resources">Recursos</Link>
-        </li>
-        <li>
+        </a>
+        <a>
           <Link to="/contact">Contacto</Link>
-        </li>
-      </ul>
-    </nav>
+        </a>
+        <button
+          className={`${styles.navBtn} ${styles.navCloseBtn}`}
+          onClick={showNavbar}
+        >
+          <FaTimes />
+        </button>
+      </nav>
+      <button className={styles.navBtn} onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
   );
 }
 
