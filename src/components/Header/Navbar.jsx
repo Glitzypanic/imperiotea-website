@@ -1,10 +1,27 @@
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
   const navRef = useRef();
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const showNavbar = () => {
     if (navRef.current) {
@@ -14,7 +31,10 @@ function Navbar() {
 
   return (
     <header className={styles.navbar}>
-      <nav ref={navRef} className={styles.list}>
+      <nav
+        ref={navRef}
+        className={`${styles.list} ${isScrolled ? styles.navbarHidden : ""}`}
+      >
         <a>
           <Link to="/">Inicio</Link>
         </a>
