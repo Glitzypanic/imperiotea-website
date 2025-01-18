@@ -1,0 +1,21 @@
+.infoCards {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+  margin-top: 20px;
+}
+
+.noticeCards {
+  display: flex;
+  flex-direction: column;
+}
+
+.noticeCards h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}

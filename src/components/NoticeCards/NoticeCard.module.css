@@ -1,0 +1,28 @@
+.noticeCard {
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.noticeCard h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.noticeCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.noticeCard button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #1c5f9c;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}

@@ -9,11 +9,12 @@
     "Helvetica Neue", Arial, sans-serif;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  padding-top: 80px;
 }
 
 :global(main) {
   min-height: 100vh;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
