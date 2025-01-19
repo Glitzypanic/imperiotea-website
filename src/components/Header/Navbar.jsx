@@ -1,12 +1,12 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
   const navRef = useRef();
-
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,35 +29,57 @@ function Navbar() {
     }
   };
 
+  const isActive = (path) => {
+    return location.pathname == path ? styles.active : "";
+  };
+
   return (
     <header className={styles.navbar}>
       <nav
         ref={navRef}
-        className={`${styles.list} ${isScrolled ? styles.navbarHidden : ""}`}
+        className={`${isScrolled ? styles.navbarHidden : ""}`}
+        role="navigation"
       >
-        <a>
-          <Link to="/">Inicio</Link>
-        </a>
-        <a>
-          <Link to="/about">Quienes somos</Link>
-        </a>
-        <a>
-          <Link to="/news">Blog</Link>
-        </a>
-        <a>
-          <Link to="/resources">Recursos</Link>
-        </a>
-        <a>
-          <Link to="/contact">Contacto</Link>
-        </a>
+        <ul>
+          <li>
+            <Link to="/" className={isActive("/")}>
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className={isActive("/about")}>
+              Quienes somos
+            </Link>
+          </li>
+          <li>
+            <Link to="/news" className={isActive("/news")}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/resources" className={isActive("/resources")}>
+              Recursos
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className={isActive("/contact")}>
+              Contacto
+            </Link>
+          </li>
+        </ul>
         <button
           className={`${styles.navBtn} ${styles.navCloseBtn}`}
           onClick={showNavbar}
+          aria-label="Cerrar menú"
         >
           <FaTimes />
         </button>
       </nav>
-      <button className={styles.navBtn} onClick={showNavbar}>
+      <button
+        className={styles.navBtn}
+        onClick={showNavbar}
+        aria-label="Abrir menú"
+      >
         <FaBars />
       </button>
     </header>

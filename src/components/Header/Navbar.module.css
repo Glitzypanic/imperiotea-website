@@ -13,16 +13,21 @@
   background: white;
 }
 
+.active {
+  color: #1c5f9c;
+  font-weight: bold;
+}
+
 .navbarHidden {
   top: -100px;
 }
 
-header .list {
+header nav ul {
   display: flex;
   gap: 10px;
 }
 
-header nav a:hover {
+header nav li:hover {
   color: #1c5f9c;
 }
 
@@ -64,7 +69,7 @@ header .navBtn {
     right: 2rem;
   }
 
-  nav a {
+  nav li {
     font-size: 1.2rem;
     border: 1px solid blue;
   }

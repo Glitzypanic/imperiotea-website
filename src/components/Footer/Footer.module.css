@@ -1,18 +1,28 @@
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 30px;
   height: 25vh;
   font-size: 1.2rem;
   background-color: #1c5f9c;
   color: aliceblue;
+  padding-left: 390px;
 }
 
 .list {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   height: 200px;
+}
+
+.list ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.list ul li:hover {
+  color: #070505;
 }
 
 .title {
