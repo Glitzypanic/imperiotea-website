@@ -1,0 +1,33 @@
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #1c5f9c;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.description h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.description p {
+  font-size: 1.4rem;
+}
+
+.right {
+  background-image: url("/public/descripcion.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  height: 400px;
+  border-radius: 0 10px 10px 0;
+}
+
+.left {
+  padding: 20px;
+  color: white;
+}

@@ -1,10 +1,21 @@
-footer {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  gap: 30px;
+  height: 25vh;
   font-size: 1.2rem;
-  margin-top: auto;
   background-color: #1c5f9c;
   color: aliceblue;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+  height: 200px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
