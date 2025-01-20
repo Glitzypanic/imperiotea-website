@@ -1,4 +1,5 @@
 import styles from "./ContactCard.module.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
 function ContactCard({ img, title }) {
@@ -12,7 +13,9 @@ function ContactCard({ img, title }) {
           preguntas, recibir tus comentarios y ayudarte en lo que necesites. ¡No
           dudes en contactarnos!
         </p>
-        <button className={styles.button}>Chat en WhatsApp</button>
+        <button className={styles.button}>
+          Chat en WhatsApp <FaWhatsapp className={styles.icon} />
+        </button>
       </div>
     </section>
   );

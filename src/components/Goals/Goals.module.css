@@ -4,7 +4,7 @@
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #1c5f9c;
+  border: 1px solid var(--primary);
 }
 
 .text {
@@ -15,7 +15,7 @@
 .text h4 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1c5f9c;
+  color: var(--primary);
 }
 
 .text h2 {
@@ -30,10 +30,15 @@
 .text button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #1c5f9c;
-  color: white;
+  background-color: var(--primary);
+  color: var(--secondary);
   border: none;
   border-radius: 10px;
+}
+
+.text button:hover {
+  background-color: var(--hover);
+  color: var(--secondary);
 }
 
 .images {

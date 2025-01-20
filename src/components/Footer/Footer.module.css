@@ -4,8 +4,8 @@
   gap: 30px;
   height: 25vh;
   font-size: 1.2rem;
-  background-color: #1c5f9c;
-  color: aliceblue;
+  background-color: var(--primary);
+  color: var(--secondary);
   padding-left: 390px;
 }
 
@@ -28,4 +28,51 @@
 .title {
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+.socialTitle {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.contactIcon {
+  font-size: 20px;
+  color: var(--secondary);
+}
+
+.socialList {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.socialIcon {
+  font-size: 30px;
+  color: var(--secondary);
+}
+
+.socialIcon:hover {
+  color: #070505;
+}
+
+.socialItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
 }

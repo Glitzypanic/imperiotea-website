@@ -16,12 +16,12 @@ function Goals() {
       </div>
       <div className={styles.images}>
         <div>
-          <img src="/public/kids.webp" height={510} alt="" />
+          <img src="/kids.webp" height={510} alt="" />
         </div>
         <div className={styles.rightImages}>
-          <img src="/public/charla.webp" height={250} alt="" />
+          <img src="/charla.webp" height={250} alt="" />
           <img
-            src="/public/conferencia.webp"
+            src="/conferencia.webp"
             alt=""
             height={250}
             className={styles.image3}
