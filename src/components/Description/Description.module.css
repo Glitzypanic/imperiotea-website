@@ -1,7 +1,7 @@
 .description {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #1c5f9c;
+  background-color: var(--primary);
   margin-top: 20px;
   border-radius: 10px;
 }
@@ -18,7 +18,7 @@
 }
 
 .right {
-  background-image: url("/public/descripcion.webp");
+  background-image: url("/descripcion.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,5 +29,5 @@
 
 .left {
   padding: 20px;
-  color: white;
+  color: var(--secondary);
 }

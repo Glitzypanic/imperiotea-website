@@ -1,12 +1,14 @@
 .noticeCard {
   width: 500px;
-  margin-top: 20px;
   margin-bottom: 20px;
+  border: 1px solid var(--primary);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .noticeCard h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .noticeCard img {
@@ -20,9 +22,22 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background: #1c5f9c;
-  color: white;
+  background: var(--primary);
+  color: var(--secondary);
   font-size: 1rem;
   font-weight: 500;
   margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.noticeCard button:hover {
+  background: var(--hover);
+  color: var(--secondary);
+}
+
+.icon {
+  color: var(--secondary);
 }

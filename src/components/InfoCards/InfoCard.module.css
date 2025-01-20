@@ -1,9 +1,19 @@
 .infoCard {
-  border: 1px solid black;
   padding: 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  width: 500px;
+}
+
+.imageContainer {
+  justify-self: center;
 }
 
 .infoCard h3 {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
+}
+
+.infoCard p {
+  font-size: 1.1rem;
 }

@@ -1,0 +1,53 @@
+.personCard {
+  background-color: var(--secondary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.personCard img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid var(--primary); */
+  padding: 10px;
+  width: 300px;
+  border-radius: 0 0 10px 10px;
+}
+
+.textContainer button {
+  background: var(--secondary);
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.textContainer button:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.profession {
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 290px;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.description {
+  width: 300px;
+}

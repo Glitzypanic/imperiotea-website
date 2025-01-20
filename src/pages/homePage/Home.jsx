@@ -4,6 +4,7 @@ import Description from "../../components/Description/Description";
 import InfoCard from "../../components/InfoCards/InfoCard";
 import NoticeCards from "../../components/NoticeCards/NoticeCard";
 import Goals from "../../components/Goals/Goals";
+import ContactCard from "../../components/ContactCard/ContactCard";
 
 function Home() {
   return (
@@ -18,19 +19,19 @@ function Home() {
       <section className={styles.infoCards}>
         <InfoCard
           title="Misión"
-          image="/public/mision.svg"
+          image="/mision.svg"
           description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro ab, harum a nam voluptas placeat inventore ipsa, blanditiis ratione excepturi soluta aperiam consectetur totam maiores voluptatem quas sapiente assumenda."
           alt="Ilustracion de una mision"
         />
         <InfoCard
           title="Visión"
-          image="/public/vision.svg"
+          image="/vision.svg"
           description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro ab, harum a nam voluptas placeat inventore ipsa, blanditiis ratione excepturi soluta aperiam consectetur totam maiores voluptatem quas sapiente assumenda."
           alt="Ilustracion de una vision"
         />
         <InfoCard
           title="Valores"
-          image="/public/valores.svg"
+          image="/valores.svg"
           description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut porro ab, harum a nam voluptas placeat inventore ipsa, blanditiis ratione excepturi soluta aperiam consectetur totam maiores voluptatem quas sapiente assumenda."
           alt="Ilustracion de valores"
         />
@@ -38,6 +39,12 @@ function Home() {
 
       {/* Proyectos */}
       <Goals />
+
+      {/* Contacto */}
+      <div className={styles.contactContainer}>
+        <ContactCard img="/Question.svg" title="Tienes alguna pregunta?" />
+        <ContactCard img="/Message.svg" title="Envianos un Email" />
+      </div>
 
       {/* Noticias */}
       <section className={styles.noticeCards}>
