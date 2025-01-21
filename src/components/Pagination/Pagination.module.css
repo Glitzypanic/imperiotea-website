@@ -1,0 +1,41 @@
+/* Pagination.module.css or wherever you define your styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 45px;
+  height: 45px;
+}
+
+.paginationButton {
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--tertiary);
+  border: 1px solid rgb(190, 190, 190);
+
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.paginationButton:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.active {
+  font-weight: bold;
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-radius: 10px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
