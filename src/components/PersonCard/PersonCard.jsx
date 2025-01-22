@@ -7,7 +7,7 @@ function PersonCard({ name, profession, img }) {
 
   return (
     <section className={styles.personCard}>
-      <img src={img} alt="Person" width={300} height={300} />
+      <img src={img} alt="Person" />
       <div className={styles.textContainer}>
         <h3 className={styles.name}>{name}</h3>
         <span className={styles.profession}>{profession}</span>

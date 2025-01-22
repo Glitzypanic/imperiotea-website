@@ -35,6 +35,7 @@ function Navbar() {
 
   return (
     <header className={styles.navbar}>
+      <img src="/logo.svg" alt="" height={120} width={120} />
       <nav
         ref={navRef}
         className={`${isScrolled ? styles.navbarHidden : ""}`}
@@ -53,7 +54,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/news" className={isActive("/news")}>
-              Blog
+              Noticias
             </Link>
           </li>
           <li>

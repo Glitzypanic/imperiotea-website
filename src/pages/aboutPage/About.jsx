@@ -25,17 +25,17 @@ function About() {
         </p>
       </div>
       <div className={styles.PersonContainer}>
-        <h2 className={styles.personTitle}>Nuestra Directiva</h2>
+        <h2 className={styles.personTitle}>Nuestro Equipo</h2>
         <div className={styles.personCardContainer}>
           <PersonCard
             name="Cecilia Díaz Guajardo "
             profession="Terapeuta Ocupacional especializada en infancia"
-            img="/chris.webp"
+            img="/ceci.webp"
           />
           <PersonCard
             name="Cecilia Díaz Guajardo "
             profession="Terapeuta Ocupacional especializada en infancia"
-            img="/christin.webp"
+            img="/ceci.webp"
           />
           <PersonCard
             name="Cecilia Díaz Guajardo "

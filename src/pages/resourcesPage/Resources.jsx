@@ -1,7 +1,5 @@
-import styles from "./Resources.module.css";
-
 function Resources() {
-  return <div>Recursos</div>;
+  return <div></div>;
 }
 
 export default Resources;

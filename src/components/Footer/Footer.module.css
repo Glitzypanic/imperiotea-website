@@ -1,12 +1,22 @@
 .footer {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 30px;
   height: 25vh;
   font-size: 1.2rem;
-  background-color: var(--primary);
-  color: var(--secondary);
-  padding-left: 390px;
+  background-color: var(--quintary);
+  background-image: url("/pattern2.svg");
+  background-size: cover;
+  background-position: center;
+  color: var(--tertiary);
+  /* border-top: 1px solid var(--primary); */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  border-radius: 10px;
+  height: 200px;
 }
 
 .list {
@@ -38,7 +48,7 @@
 
 .contactIcon {
   font-size: 20px;
-  color: var(--secondary);
+  color: var(--tertiary);
 }
 
 .socialList {
@@ -49,7 +59,7 @@
 
 .socialIcon {
   font-size: 30px;
-  color: var(--secondary);
+  color: var(--tertiary);
 }
 
 .socialIcon:hover {
@@ -75,4 +85,16 @@
   flex-direction: column;
   gap: 10px;
   height: 200px;
+}
+
+.addressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+}
+
+.addressTitle {
+  font-weight: bold;
+  font-size: 1.3rem;
 }

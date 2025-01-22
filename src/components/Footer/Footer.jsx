@@ -2,14 +2,24 @@ import styles from "./Footer.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
+  const openGoogleMaps = () => {
+    // Aquí puedes poner la dirección que deseas mostrar
+    const address = "Pérez Canto #612, La Caleta, Valparaiso"; // Ejemplo: Dirección de Googleplex
+
+    // URL base de Google Maps para búsqueda de direcciones
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      address
+    )}`;
+
+    // Abre la URL en una nueva pestaña
+    window.open(googleMapsUrl, "_blank");
+  };
   return (
     <footer className={styles.footer}>
-      <img src="" alt="" />
+      <img src="/logo.svg" alt="" className={styles.logo} />
       <div className={styles.list}>
         <h3 className={styles.title}>Enlaces</h3>
         <ul>
@@ -34,21 +44,30 @@ function Footer() {
           </li>
         </ul>
       </div>
+
       <div className={styles.socialContainer}>
         <h3 className={styles.socialTitle}>Redes sociales</h3>
         <ul className={styles.socialList}>
           <li className={styles.socialItem}>
-            <FaFacebookSquare className={styles.socialIcon} />
+            <a href="https://web.facebook.com/imperio.tea.54" target="blank">
+              <FaFacebookSquare className={styles.socialIcon} />
+            </a>
           </li>
           <li className={styles.socialItem}>
-            <FaXTwitter className={styles.socialIcon} />
+            <a href="https://www.instagram.com/imperiotea/" target="blank">
+              <FiInstagram className={styles.socialIcon} />
+            </a>
           </li>
-          <li className={styles.socialItem}>
-            <FiInstagram className={styles.socialIcon} />
-          </li>
-          <li className={styles.socialItem}>
-            <FaLinkedin className={styles.socialIcon} />
-          </li>
+        </ul>
+      </div>
+
+      <div className={styles.addressContainer}>
+        <h3 className={styles.addressTitle}>Direccion</h3>
+        <ul>
+          <li>Arturo Pérez Canto #612</li>
+          <button onClick={openGoogleMaps} className={styles.mapButton}>
+            Ver en el mapa
+          </button>
         </ul>
       </div>
     </footer>
