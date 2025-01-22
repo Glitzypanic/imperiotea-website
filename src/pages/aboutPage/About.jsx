@@ -31,36 +31,18 @@ function About() {
             name="Cecilia Díaz Guajardo "
             profession="Terapeuta Ocupacional especializada en infancia"
             img="/ceci.webp"
+            description="Terapeuta Ocupacional especializada en infancia
+Egresada de la Universidad de Playa Ancha
+Diplomado experto en autismo, Hyperpraxis 
+Diplomado en neurorrehabilitación infantil e integración sensorial, Universidad Autónoma de Chile
+Diplomado en NANEAS y sus familias, Sociedad Chilena de Pediatría 
+Curso de introducción a la teoría de integración sensorial, Corporación Chilena de IS
+Curso de TO en rechazo y selectividad alimentaria en niños y niñas, OTEC Movilizate"
           />
           <PersonCard
             name="Cecilia Díaz Guajardo "
             profession="Terapeuta Ocupacional especializada en infancia"
             img="/ceci.webp"
-          />
-          <PersonCard
-            name="Cecilia Díaz Guajardo "
-            profession="Terapeuta Ocupacional especializada en infancia"
-            img="/isaac.webp"
-          />
-          <PersonCard
-            name="Cecilia Díaz Guajardo "
-            profession="Terapeuta Ocupacional especializada en infancia"
-            img="/jose.webp"
-          />
-          <PersonCard
-            name="Cecilia Díaz Guajardo "
-            profession="Terapeuta Ocupacional especializada en infancia"
-            img="/pete.webp"
-          />
-          <PersonCard
-            name="Cecilia Díaz Guajardo "
-            profession="Terapeuta Ocupacional especializada en infancia"
-            img="/seba.webp"
-          />
-          <PersonCard
-            name="Cecilia Díaz Guajardo "
-            profession="Terapeuta Ocupacional especializada en infancia"
-            img="/tami.webp"
           />
         </div>
       </div>
