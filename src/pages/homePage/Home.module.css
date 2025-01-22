@@ -4,6 +4,10 @@
   gap: 20px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .noticeCards {
   display: flex;
   flex-direction: column;

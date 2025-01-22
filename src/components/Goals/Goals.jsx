@@ -4,15 +4,16 @@ function Goals() {
   return (
     <section className={styles.goals}>
       <div className={styles.text}>
-        <h4>Objetivos</h4>
-        <h2>Lores Impus 2025</h2>
+        <h4>Imperio TEA</h4>
+        <h2>Nuestro Objetivo</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed labore at
-          esse illo, dignissimos reiciendis aliquam accusantium recusandae ut a
-          nihil sunt libero! Eos, quaerat quis adipisci dignissimos magnam
-          sequi!
+          Entregar las herramientas necesarias a nuestros profesionales para un
+          trabajo de calidad. Tener un lugar propio, donde la comunidad nos
+          pueda identificar. Contar con mayor cantidad de especialistas para
+          entregar mas sesiones a las personas que la necesiten. Crear un cambio
+          social, apoyando la inclusión de esta condición. Contar con apoyo de
+          privados para entregar mas beneficios a nuestros socios.
         </p>
-        <button role="button">Contactanos</button>
       </div>
       <div className={styles.images}>
         <div>

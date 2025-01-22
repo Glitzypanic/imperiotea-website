@@ -35,7 +35,9 @@ function Navbar() {
 
   return (
     <header className={styles.navbar}>
-      <img src="/logo.svg" alt="" height={120} width={120} />
+      <Link to="/">
+        <img src="/logo.svg" alt="" height={120} width={120} />
+      </Link>
       <nav
         ref={navRef}
         className={`${isScrolled ? styles.navbarHidden : ""}`}
