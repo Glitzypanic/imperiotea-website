@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "title": "Título de la noticia 1",
+    "title": "Charla sobre neurociencia y neurodiversidad",
     "description": "Descripción de la noticia 1",
-    "date": "2024-01-15",
+    "date": "2024-06-10",
     "type": "Charla",
     "image": "/charla.webp",
     "link": "/noticias/1"
   },
   {
     "id": 2,
-    "title": "Título de la noticia 2",
+    "title": "Superando las barreras de la vida",
     "description": "Descripción de la noticia 2",
-    "date": "2024-01-16",
-    "type": "Actividad",
+    "date": "2024-06-23",
+    "type": "Charla",
     "image": "/conferencia.webp",
     "link": "/noticias/2"
   },
@@ -199,28 +199,28 @@
   },
   {
     "id": 23,
-    "title": "Título de la noticia 23",
+    "title": "Bases neurobiológicas de la empatia",
     "description": "Descripción de la noticia 23",
     "date": "2024-02-06",
-    "type": "noticia",
-    "image": "/notice23.webp",
+    "type": "Noticia",
+    "image": "/school.webp",
     "link": "/noticias/23"
   },
   {
     "id": 24,
-    "title": "Título de la noticia 24",
+    "title": "Superando las barreras de la vida",
     "description": "Descripción de la noticia 24",
     "date": "2024-02-07",
-    "type": "actividad",
-    "image": "/notice24.webp",
+    "type": "Actividad",
+    "image": "/conferencia.webp",
     "link": "/noticias/24"
   },
   {
     "id": 25,
-    "title": "Título de la noticia 25",
+    "title": "Charla sobre neurociencia y neurodiversidad",
     "description": "Descripción de la noticia 25",
     "date": "2024-02-08",
-    "type": "noticia",
+    "type": "Charla",
     "image": "/charla.webp",
     "link": "/noticias/25"
   }

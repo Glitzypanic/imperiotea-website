@@ -2,11 +2,16 @@ import styles from "./Home.module.css";
 import Hero from "../../components/Hero/Hero";
 import Description from "../../components/Description/Description";
 import InfoCard from "../../components/InfoCards/InfoCard";
-import NoticeCards from "../../components/NoticeCards/NoticeCard";
+import NoticeCard from "../../components/NoticeCards/NoticeCard";
 import Goals from "../../components/Goals/Goals";
 import ContactCard from "../../components/ContactCard/ContactCard";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+
+import newsData from "../../data/news.json";
 
 function Home() {
+  const news = newsData[0];
   return (
     <main className={styles.home}>
       {/* Hero de la fundación */}
@@ -24,8 +29,11 @@ function Home() {
         >
           <p>
             Somos una corporación social sin fines de lucro, dedicada a apoyar y
-            agrupar a familias diagnosticadas con TRASTORNO DEL ESPECTRO AUTISTA
-            (TEA), facilitando el acceso a diversas terapias y servicios
+            agrupar a familias diagnosticadas con{" "}
+            <span className={styles.bold}>
+              TRASTORNO DEL ESPECTRO AUTISTA (TEA)
+            </span>
+            , facilitando el acceso a diversas terapias y servicios
             especializados para niños, niñas, adolescentes y adultos, desde el
             diagnóstico profesional hasta su integración en la vida diaria. Nos
             comprometemos a proporcionar un entorno inclusivo y de apoyo,
@@ -97,17 +105,40 @@ function Home() {
 
       {/* Contacto */}
       <div className={styles.contactContainer}>
-        <ContactCard img="/Question.svg" title="Tienes alguna pregunta?" />
-        <ContactCard img="/Message.svg" title="Envianos un Email" />
+        <ContactCard
+          img="/Question.svg"
+          title="¿Tienes alguna pregunta?"
+          icon={FaWhatsapp}
+          contactType="whatsapp"
+          description="¿Necesitas apoyo inmediato?
+En Imperio TEA, entendemos que a veces necesitas hablar con alguien de inmediato. Si tienes una situación urgente o simplemente quieres una conversación rápida sobre TEA, estamos aquí para ti. ¡Contáctanos por WhatsApp para una respuesta rápida y personalizada!"
+        />
+        <ContactCard
+          img="/Message.svg"
+          title="¿Quieres enviarnos un email?"
+          icon={MdOutlineMail}
+          contactType="email"
+          description="¿Quieres compartir tu historia o recibir información detallada?
+En Imperio TEA, valoramos cada voz y experiencia. Si deseas enviarnos una historia personal, solicitar información detallada sobre nuestros servicios, o participar en nuestras iniciativas, el email es el mejor camino. Envíanos un correo y únete a nuestra red de apoyo, donde podemos explorar juntos el mundo del autismo con tiempo y detalle."
+        />
       </div>
 
       {/* Noticias */}
       <section className={styles.noticeCards}>
         <h2>Ultimas Noticias</h2>
         <div className={styles.cards}>
-          <NoticeCards />
-          <NoticeCards />
-          <NoticeCards />
+          <NoticeCard
+            key={news.id}
+            type={news.type}
+            title={news.title}
+            date={news.date}
+            description={news.description}
+            image={news.image}
+            link={news.link}
+          />
+          {/* <NoticeCards title="Charla sobre TEA" description="lorem ipsum" />
+          <NoticeCards title="Noticia 2" description="lorem ipsum" />
+          <NoticeCards title="Noticia 3" description="lorem ipsum" /> */}
         </div>
       </section>
     </main>

@@ -1,22 +1,34 @@
+import { useState, useEffect } from "react";
 import styles from "./NoticeCard.module.css";
-import { FaPlus } from "react-icons/fa6";
+import NewsCard from "../NewsCard/NewsCard";
 
-function NoticeCard() {
+// Importa el archivo JSON
+import newsData from "../../data/news.json";
+
+export default function NewsList() {
+  const [currentNews, setCurrentNews] = useState([]);
+
+  useEffect(() => {
+    // Invierte el orden del array y toma los primeros 4 elementos
+    const reversedNewsData = [...newsData].reverse().slice(0, 3);
+    setCurrentNews(reversedNewsData);
+  }, []);
+
   return (
-    <section className={styles.noticeCard}>
-      <img src="/notice.webp" alt="Imagen de una noticia" width={300} />
-      <h3>Hola</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-        ratione, assumenda illum asperiores quasi quam pariatur sapiente! Iusto
-        placeat, fugit et dolorem quas nulla iste incidunt reprehenderit culpa
-        dolore ex?
-      </p>
-      <button aria-labelledby="button">
-        Saber mas <FaPlus color={styles.icon} />
-      </button>
-    </section>
+    <div className={styles.container}>
+      <div className={styles.grid}>
+        {currentNews.map((news) => (
+          <NewsCard
+            key={news.id}
+            type={news.type}
+            title={news.title}
+            date={news.date}
+            description={news.description}
+            link={news.link}
+            image={news.image}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
-
-export default NoticeCard;

@@ -12,9 +12,11 @@
 .infoCard h3 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .infoCard p {
+  font-family: var(--secondary-font);
   font-size: 1.1rem;
+  width: 96%;
 }
