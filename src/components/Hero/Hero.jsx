@@ -9,7 +9,7 @@ function Hero() {
           Corporación Imperio Trastorno Espectro Autista
         </h1>
         <p className={styles.description}>
-          !No es un mundo aparte sino parte de este mundo!
+          ¡No es un mundo aparte, sino parte de este mundo!
         </p>
       </div>
     </div>

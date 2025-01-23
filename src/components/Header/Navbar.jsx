@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <header className={styles.navbar}>
       <Link to="/">
-        <img src="/logo.svg" alt="" height={120} width={120} />
+        <img src="/logo-imperio1.png" alt="" height={140} width={120} />
       </Link>
       <nav
         ref={navRef}
@@ -51,7 +51,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/about" className={isActive("/about")}>
-              Quienes somos
+              Quiénes somos
             </Link>
           </li>
           <li>

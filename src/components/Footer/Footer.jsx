@@ -3,6 +3,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import { IoMapSharp } from "react-icons/io5";
+import { SiGooglemaps } from "react-icons/si";
 
 function Footer() {
   const openGoogleMaps = () => {
@@ -19,19 +21,19 @@ function Footer() {
   };
   return (
     <footer className={styles.footer}>
-      <img src="/logo.svg" alt="" className={styles.logo} />
+      <img src="/logo-imperio1.png" alt="" className={styles.logo} />
       <div className={styles.list}>
         <h3 className={styles.title}>Enlaces</h3>
         <ul>
           <li>Inicio</li>
-          <li>Quienes somos</li>
+          <li>Quiénes somos</li>
           <li>Blog</li>
           <li>Recursos</li>
           <li>Contacto</li>
         </ul>
       </div>
 
-      <div className={styles.list}>
+      <div className={styles.listContact}>
         <h3 className={styles.title}>Contacto</h3>
         <ul>
           <li className={styles.contactItem}>
@@ -62,10 +64,14 @@ function Footer() {
       </div>
 
       <div className={styles.addressContainer}>
-        <h3 className={styles.addressTitle}>Direccion</h3>
+        <h3 className={styles.addressTitle}>Dirección</h3>
         <ul>
-          <li>Arturo Pérez Canto #612</li>
+          <li>
+            <SiGooglemaps />
+            Arturo Pérez Canto #612
+          </li>
           <button onClick={openGoogleMaps} className={styles.mapButton}>
+            <IoMapSharp />
             Ver en el mapa
           </button>
         </ul>
