@@ -1,5 +1,11 @@
+import ResourcesHero from "../../components/resourcesHero/ResourcesHero";
+
 function Resources() {
-  return <div></div>;
+  return (
+    <main>
+      <ResourcesHero />
+    </main>
+  );
 }
 
 export default Resources;

@@ -1,7 +1,11 @@
-import styles from "./Contact.module.css";
+import ContactHero from "../../components/contactHero/ContactHero";
 
 function Contact() {
-  return <div>Contacto</div>;
+  return (
+    <main>
+      <ContactHero />
+    </main>
+  );
 }
 
 export default Contact;

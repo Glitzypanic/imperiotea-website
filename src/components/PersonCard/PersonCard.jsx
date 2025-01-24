@@ -20,9 +20,10 @@ function PersonCard({ name, profession, img, description }) {
     <section className={styles.personCard}>
       <img src={img} alt="Person" />
       <div className={styles.textContainer}>
-        <h3 className={styles.name}>{name}</h3>
-        <span className={styles.profession}>{profession}</span>
-
+        <div className={styles.text}>
+          <h3 className={styles.name}>{name}</h3>
+          <span className={styles.profession}>{profession}</span>
+        </div>
         <button onClick={openModal}>Más información</button>
       </div>
 
@@ -32,7 +33,7 @@ function PersonCard({ name, profession, img, description }) {
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
           >
-            <img src="/ceci.webp" alt="" />
+            <img src={img} alt="" />
             <div className={styles.modalResume}>
               <h2>{name}</h2>
               <span>{profession}</span>

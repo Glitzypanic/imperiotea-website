@@ -1,10 +1,10 @@
-import styles from "./Footer.module.css";
-import { FaWhatsapp } from "react-icons/fa";
-import { MdOutlineMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoMapSharp } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
 import { SiGooglemaps } from "react-icons/si";
+import styles from "./Footer.module.css";
 
 function Footer() {
   const openGoogleMaps = () => {

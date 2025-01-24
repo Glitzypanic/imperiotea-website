@@ -1,9 +1,9 @@
 .footer {
+  height: 260px;
   font-family: var(--secondary-font);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 30px;
   font-size: 1.2rem;
   background-color: var(--quinary);
   background-image: url("/wavesNegative.svg");

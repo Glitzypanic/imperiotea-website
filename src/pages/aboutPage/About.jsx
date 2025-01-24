@@ -40,9 +40,14 @@ Curso de introducción a la teoría de integración sensorial, Corporación Chil
 Curso de TO en rechazo y selectividad alimentaria en niños y niñas, OTEC Movilizate"
           />
           <PersonCard
-            name="Cecilia Díaz Guajardo "
-            profession="Terapeuta Ocupacional especializada en infancia"
-            img="/ceci.webp"
+            name="John Iglesias Pérez"
+            profession="Fonoaudiólogo"
+            img="/john.webp"
+          />
+          <PersonCard
+            name="Macarena Escobar Coccio"
+            profession="Fonoaudióloga"
+            img="/macarena.webp"
           />
         </div>
       </div>
