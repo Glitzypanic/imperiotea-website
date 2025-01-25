@@ -5,10 +5,9 @@
   align-items: center;
   justify-content: space-around;
   font-size: 1.2rem;
-  background-color: var(--quinary);
-  background-image: url("/wavesNegative.svg");
-  background-size: cover;
-  background-position: center;
+  background: 
+    url("@assets/images/backgrounds/wavesNegative.svg"),
+    var(--quinary);
   color: var(--tertiary);
   /* border-top: 1px solid var(--primary); */
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
@@ -121,4 +120,37 @@
 .addressTitle {
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+/* Secciones comunes */
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Elementos interactivos */
+.interactiveItem {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.interactiveItem:hover {
+  color: #070505;
+}
+
+.mapButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
