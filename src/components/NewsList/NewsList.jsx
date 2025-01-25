@@ -8,7 +8,7 @@ import newsData from "../../data/news.json";
 
 export default function NewsList() {
   const [currentPage, setCurrentPage] = useState(1);
-  const newsPerPage = 9;
+  const newsPerPage = 6;
 
   // Invierte el orden del array
   const reversedNewsData = [...newsData].reverse();
