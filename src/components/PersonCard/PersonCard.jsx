@@ -37,7 +37,23 @@ function PersonCard({ name, profession, img, description }) {
             <div className={styles.modalResume}>
               <h2>{name}</h2>
               <span>{profession}</span>
-              <p className={styles.description}>{description}</p>
+
+              {/* Reemplazar el párrafo simple por lista estructurada */}
+              {description && (
+                <div className={styles.qualifications}>
+                  <h3 className={styles.qualificationsTitle}>
+                    Formación académica
+                  </h3>
+                  <ul>
+                    {description.split("\n").map((item, index) => (
+                      <li key={index} className={styles.qualificationItem}>
+                        {item.trim()}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               <button onClick={closeModal} className={styles.closeButton}>
                 Cerrar
               </button>

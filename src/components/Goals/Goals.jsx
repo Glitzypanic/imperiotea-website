@@ -17,12 +17,20 @@ function Goals() {
       </div>
       <div className={styles.images}>
         <div>
-          <img src="/kids.webp" height={510} alt="" />
+          <img
+            src="src/assets/images/activities/varias/varias7.webp"
+            height={510}
+            alt=""
+          />
         </div>
         <div className={styles.rightImages}>
-          <img src="/charla.webp" height={250} alt="" />
           <img
-            src="/conferencia.webp"
+            src="src/assets/images/activities/anglo-american/anglo1.webp"
+            height={250}
+            alt=""
+          />
+          <img
+            src="src/assets/images/activities/charla-cftpucv/cftpucv7.webp"
             alt=""
             height={250}
             className={styles.image3}

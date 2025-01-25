@@ -91,37 +91,49 @@
 .modalResume {
   width: 100%;
   padding: 20px;
+  color: #333;
 }
 
 .modalResume h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.4rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
 }
 
 .modalResume span {
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: gray;
+  display: block;
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-weight: 500;
 }
 
-.modalResume p {
-  margin-top: 20px;
-  font-size: 1rem;
+.qualificationsTitle {
+  font-size: 1.6rem;
+  color: var(--primary-dark);
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.qualificationItem {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.qualificationItem::before {
+  content: "▹";
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
 
 .closeButton {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: var(--primary);
-  color: var(--quarty);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  margin-top: 2.5rem;
+  padding: 12px 25px;
+  font-size: 1.1rem;
   width: 100%;
-}
-
-.closeButton:hover {
-  background-color: var(--primary);
-  color: var(--secondary);
-  border: 1px solid var(--primary);
 }

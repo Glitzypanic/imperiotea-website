@@ -13,12 +13,13 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       <ul className={styles.pagination}>
         {pageNumbers.map((number) => (
           <li
+            onClick={() => onPageChange(number)}
             key={number}
             className={`${styles.paginationButton} ${
               number === currentPage ? styles.active : ""
             }`}
           >
-            <button onClick={() => onPageChange(number)}>{number}</button>
+            <button>{number}</button>
           </li>
         ))}
       </ul>
