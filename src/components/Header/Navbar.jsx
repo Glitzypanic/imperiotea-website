@@ -59,11 +59,11 @@ function Navbar() {
               Noticias
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/resources" className={isActive("/resources")}>
               Recursos
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/contact" className={isActive("/contact")}>
               Contacto

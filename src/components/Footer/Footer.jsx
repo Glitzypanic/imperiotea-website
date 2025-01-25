@@ -28,7 +28,7 @@ function Footer() {
           <li>Inicio</li>
           <li>Quiénes somos</li>
           <li>Blog</li>
-          <li>Recursos</li>
+          {/* <li>Recursos</li> */}
           <li>Contacto</li>
         </ul>
       </div>
