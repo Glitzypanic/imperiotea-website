@@ -24,7 +24,7 @@ function Home() {
       <section className={styles.infoCards}>
         <InfoCard
           title="Misión"
-          image="/mision.svg"
+          image="src\assets\images\icons\mision.svg"
           alt="Ilustracion de una mision"
         >
           <p>
@@ -54,7 +54,7 @@ function Home() {
         </InfoCard>
         <InfoCard
           title="Visión"
-          image="/vision.svg"
+          image="src\assets\images\icons\vision.svg"
           alt="Ilustracion de una vision"
         >
           <p>
@@ -79,7 +79,7 @@ function Home() {
         </InfoCard>
         <InfoCard
           title="Valores"
-          image="/valores.svg"
+          image="src\assets\images\icons\valores.svg"
           alt="Ilustracion de valores"
         >
           <p>
@@ -106,7 +106,7 @@ function Home() {
       {/* Contacto */}
       <div className={styles.contactContainer}>
         <ContactCard
-          img="/Question.svg"
+          img="src\assets\images\icons\Question.svg"
           title="¿Tienes alguna pregunta?"
           icon={FaWhatsapp}
           contactType="whatsapp"
@@ -114,7 +114,7 @@ function Home() {
 En Imperio TEA, entendemos que a veces necesitas hablar con alguien de inmediato. Si tienes una situación urgente o simplemente quieres una conversación rápida sobre TEA, estamos aquí para ti. ¡Contáctanos por WhatsApp para una respuesta rápida y personalizada!"
         />
         <ContactCard
-          img="/Message.svg"
+          img="src\assets\images\icons\Message.svg"
           title="¿Quieres enviarnos un email?"
           icon={MdOutlineMail}
           contactType="email"
