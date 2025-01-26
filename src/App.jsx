@@ -5,7 +5,7 @@ import HomePage from "./pages/homePage/Home";
 import AboutPage from "./pages/aboutPage/About";
 import NewsPage from "./pages/newsPage/News";
 // import ResourcesPage from "./pages/resourcesPage/Resources";
-import ContactPage from "./pages/contactPage/Contact";
+// import ContactPage from "./pages/contactPage/Contact";
 import Error404Page from "./pages/errorPage/Error404";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/about" exactly Component={AboutPage} />
         <Route path="/news" Component={NewsPage} />
         {/* <Route path="/resources" Component={ResourcesPage} /> */}
-        <Route path="/contact" Component={ContactPage} />
+        {/* <Route path="/contact" Component={ContactPage} /> */}
         <Route path="*" Component={Error404Page} />
       </Routes>
     </Layout>
