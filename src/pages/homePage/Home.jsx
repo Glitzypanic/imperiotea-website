@@ -136,9 +136,6 @@ En Imperio TEA, valoramos cada voz y experiencia. Si deseas enviarnos una histor
             image={news.image}
             link={news.link}
           />
-          {/* <NoticeCards title="Charla sobre TEA" description="lorem ipsum" />
-          <NoticeCards title="Noticia 2" description="lorem ipsum" />
-          <NoticeCards title="Noticia 3" description="lorem ipsum" /> */}
         </div>
       </section>
     </main>

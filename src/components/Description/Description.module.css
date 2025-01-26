@@ -38,3 +38,63 @@
   padding: 20px;
   color: var(--secondary);
 }
+
+/* Estilos base para móviles pequeños */
+@media (max-width: 375px) {
+  .description {
+    display: grid;
+    flex-direction: column;
+  }
+
+  .description p {
+    width: 100%;
+  }
+
+  .right {
+    height: 100%;
+  }
+}
+
+/* Estilos para móviles medianos */
+@media (min-width: 376px) and (max-width: 767px) {
+  .description p {
+    width: 460px;
+  }
+
+  .right {
+    height: 100%;
+  }
+}
+
+/* Estilos para tabletas en vertical */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .description p {
+      width: 470px;
+    }
+  
+    .right {
+      height: 100%;
+    }
+}
+
+/* Estilos para tabletas en horizontal y laptops pequeñas */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .description p {
+      width: 560px;
+    }
+  
+    .right {
+      height: 100%;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1201px) {
+  .description p {
+      width: 100%;
+    }
+  
+    .right {
+      height: 100%;
+    }
+}

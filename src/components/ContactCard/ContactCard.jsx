@@ -4,7 +4,7 @@ import styles from "./ContactCard.module.css";
 function ContactCard({ img, title, icon: Icon, contactType, description }) {
   return (
     <section className={styles.contact}>
-      <img src={img} height={400} alt="" />
+      <img src={img} className={styles.illustration} alt="" />
       <div className={styles.contactInfo}>
         <div>
           <h2 className={styles.title}>{title}</h2>

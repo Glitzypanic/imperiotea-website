@@ -21,6 +21,7 @@ function Goals() {
             src="src/assets/images/activities/varias/varias7.webp"
             height={510}
             alt=""
+            className={styles.leftImage}
           />
         </div>
         <div className={styles.rightImages}>

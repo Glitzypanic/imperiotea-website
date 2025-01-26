@@ -50,70 +50,75 @@ function Footer() {
         />
       </Link>
 
-      <div className={styles.sectionContainer}>
-        <h3 className={styles.sectionTitle}>Enlaces</h3>
-        <ul>
-          {["/", "/about", "/news", "/contact"].map((path, index) => (
-            <li key={index} className={styles.interactiveItem}>
-              <Link to={path}>
-                {
-                  {
-                    "/": "Inicio",
-                    "/about": "Quiénes somos",
-                    "/news": "Blog",
-                    "/contact": "Contacto",
-                  }[path]
-                }
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div className={styles.bottom}>
+        <div>
+          <div className={styles.sectionContainer}>
+            <h3 className={styles.sectionTitle}>Enlaces</h3>
+            <ul>
+              {["/", "/about", "/news", "/contact"].map((path, index) => (
+                <li key={index} className={styles.interactiveItem}>
+                  <Link to={path}>
+                    {
+                      {
+                        "/": "Inicio",
+                        "/about": "Quiénes somos",
+                        "/news": "Blog",
+                        "/contact": "Contacto",
+                      }[path]
+                    }
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      <div className={styles.sectionContainer}>
-        <h3 className={styles.sectionTitle}>Contacto</h3>
-        <ul>
-          {contactItems.map((item, index) => (
-            <li key={index} className={styles.contactItem}>
-              {item.icon}
-              {item.text}
-            </li>
-          ))}
-        </ul>
-      </div>
+          <div className={styles.sectionContainer}>
+            <h3 className={styles.sectionTitle}>Contacto</h3>
+            <ul>
+              {contactItems.map((item, index) => (
+                <li key={index} className={styles.contactItem}>
+                  {item.icon}
+                  {item.text}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div className={styles.sectionContainer}>
+            <h3 className={`${styles.sectionTitle} ${styles.socialTitle}`}>
+              Redes sociales
+            </h3>
+            <ul className={styles.socialList}>
+              {socialLinks.map((link, index) => (
+                <li key={index} className={styles.socialItem}>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.icon}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      <div className={styles.sectionContainer}>
-        <h3 className={`${styles.sectionTitle} ${styles.socialTitle}`}>
-          Redes sociales
-        </h3>
-        <ul className={styles.socialList}>
-          {socialLinks.map((link, index) => (
-            <li key={index} className={styles.socialItem}>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
-                {link.icon}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className={styles.sectionContainer}>
-        <h3 className={styles.sectionTitle}>Dirección</h3>
-        <ul>
-          <li className={styles.addressItem}>
-            <SiGooglemaps />
-            Arturo Pérez Canto #612
-          </li>
-          <li>
-            <button
-              onClick={openGoogleMaps}
-              className={`${styles.mapButton} ${styles.interactiveItem}`}
-            >
-              <IoMapSharp />
-              Ver en el mapa
-            </button>
-          </li>
-        </ul>
+          <div className={styles.sectionContainer}>
+            <h3 className={styles.sectionTitle}>Dirección</h3>
+            <ul>
+              <li className={styles.addressItem}>
+                <SiGooglemaps />
+                Arturo Pérez Canto #612
+              </li>
+              <li>
+                <button
+                  onClick={openGoogleMaps}
+                  className={`${styles.mapButton} ${styles.interactiveItem}`}
+                >
+                  <IoMapSharp />
+                  Ver en el mapa
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   );

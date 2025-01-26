@@ -2,6 +2,7 @@
   display: flex;
   margin-top: 20px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .bold {
@@ -11,14 +12,14 @@
 .noticeCards {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   border: 1px solid var(--primary);
   margin-top: 20px;
 }
 
 .noticeCards h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
 }
@@ -32,5 +33,39 @@
 .contactContainer {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+}
+
+/* Estilos base para móviles pequeños */
+@media (max-width: 375px) {
+.contactContainer {
+  flex-direction: column;
+}
+}
+
+/* Estilos para móviles medianos */
+@media (min-width: 376px) and (max-width: 767px) {
+.contactContainer {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para tabletas en vertical */
+@media (min-width: 768px) and (max-width: 1023px) {
+.contactContainer {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para tabletas en horizontal y laptops pequeñas */
+@media (min-width: 1024px) and (max-width: 1200px) {
+.contactContainer {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1201px) {
+  .contactContainer {
+    gap: 20px;
+  }
 }

@@ -47,6 +47,7 @@
 }
 
 .sectionTitle {
+  font-family: var(--main-font);
   font-size: 2rem;
   color: var(--primary);
   font-weight: 500;
@@ -56,6 +57,7 @@
 }
 
 .sectionText {
+  font-family: var(--secondary-font);
   font-size: 1.1rem;
   line-height: 1.6;
   color: #444;

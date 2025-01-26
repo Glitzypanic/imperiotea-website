@@ -121,6 +121,16 @@ function About() {
               "Certificada en aplicación de IDTEL (Instrumento de Diagnóstico para los trastornos Específicos del Lenguaje)."
             }
           />
+          <PersonCard
+            name="Ornella Maldonado"
+            profession="Psicóloga Clínica"
+            img="src\assets\images\people\ornella.webp"
+            description={
+              "Diplomada en psico diagnóstico Infanto-Juvenil\n" +
+              "Acreditación Oficial Clínica Internacional ADOS-2\n" +
+              "Certificación Avanzada en WISC-V y ADI-R\n"
+            }
+          />
         </div>
       </div>
     </section>
