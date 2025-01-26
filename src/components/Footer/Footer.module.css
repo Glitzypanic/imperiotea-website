@@ -6,7 +6,7 @@
   font-size: 1.2rem;
   background-position: center;
   background: 
-    url("@assets/images/backgrounds/wavesNegative.svg"),
+    url("/backgrounds/wavesNegative.svg"),
     var(--quinary);
   color: var(--tertiary);
   /* border-top: 1px solid var(--primary); */
@@ -128,12 +128,13 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 200px;
+  margin-bottom: 20px;
 }
 
 .sectionTitle {
   font-weight: bold;
   font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 /* Elementos interactivos */
@@ -156,6 +157,16 @@
   gap: 10px;
 }
 
+/* Unificar clases repetidas */
+.sectionItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Eliminar clases redundantes (list, listContact, socialContainer, addressContainer) */
 
 /* Estilos base para móviles pequeños */
 @media (max-width: 375px) {
@@ -169,7 +180,8 @@
   }
 
   .socialList {
-    display: block;
+    display: inline-flex;
+    justify-content: left;
   }
 
   .socialTitle {

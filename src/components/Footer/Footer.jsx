@@ -40,6 +40,21 @@ function Footer() {
     },
   ];
 
+  // Componente reutilizable para secciones
+  // eslint-disable-next-line react/prop-types
+  const Section = ({ title, children, isSocial }) => (
+    <div className={styles.sectionContainer}>
+      <h3
+        className={`${styles.sectionTitle} ${
+          isSocial ? styles.socialTitle : ""
+        }`}
+      >
+        {title}
+      </h3>
+      {children}
+    </div>
+  );
+
   return (
     <footer className={styles.footer}>
       <Link to="/">
@@ -52,8 +67,7 @@ function Footer() {
 
       <div className={styles.bottom}>
         <div>
-          <div className={styles.sectionContainer}>
-            <h3 className={styles.sectionTitle}>Enlaces</h3>
+          <Section title="Enlaces">
             <ul>
               {["/", "/about", "/news", "/contact"].map((path, index) => (
                 <li key={index} className={styles.interactiveItem}>
@@ -70,25 +84,22 @@ function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Section>
 
-          <div className={styles.sectionContainer}>
-            <h3 className={styles.sectionTitle}>Contacto</h3>
+          <Section title="Contacto">
             <ul>
               {contactItems.map((item, index) => (
-                <li key={index} className={styles.contactItem}>
+                <li key={index} className={styles.sectionItem}>
                   {item.icon}
                   {item.text}
                 </li>
               ))}
             </ul>
-          </div>
+          </Section>
         </div>
+
         <div>
-          <div className={styles.sectionContainer}>
-            <h3 className={`${styles.sectionTitle} ${styles.socialTitle}`}>
-              Redes sociales
-            </h3>
+          <Section title="Redes sociales" isSocial>
             <ul className={styles.socialList}>
               {socialLinks.map((link, index) => (
                 <li key={index} className={styles.socialItem}>
@@ -98,12 +109,11 @@ function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Section>
 
-          <div className={styles.sectionContainer}>
-            <h3 className={styles.sectionTitle}>Dirección</h3>
+          <Section title="Dirección">
             <ul>
-              <li className={styles.addressItem}>
+              <li className={styles.sectionItem}>
                 <SiGooglemaps />
                 Arturo Pérez Canto #612
               </li>
@@ -117,7 +127,7 @@ function Footer() {
                 </button>
               </li>
             </ul>
-          </div>
+          </Section>
         </div>
       </div>
     </footer>

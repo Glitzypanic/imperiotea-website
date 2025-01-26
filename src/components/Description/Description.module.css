@@ -25,7 +25,7 @@
 }
 
 .right {
-  background-image: url("/src/assets/images/backgrounds/descripcion.webp");
+  background-image: url("/backgrounds/descripcion.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

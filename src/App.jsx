@@ -1,12 +1,12 @@
 import "./App.module.css";
 import { Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
-import HomePage from "./pages/homePage/Home";
-import AboutPage from "./pages/aboutPage/About";
-import NewsPage from "./pages/newsPage/News";
+import Layout from "./components/Layout/Layout.jsx";
+import HomePage from "./pages/homePage/Home.jsx";
+import AboutPage from "./pages/aboutPage/About.jsx";
+import NewsPage from "./pages/newsPage/News.jsx";
 // import ResourcesPage from "./pages/resourcesPage/Resources";
 // import ContactPage from "./pages/contactPage/Contact";
-import Error404Page from "./pages/errorPage/Error404";
+import Error404Page from "./pages/errorPage/Error404.jsx";
 
 function App() {
   return (

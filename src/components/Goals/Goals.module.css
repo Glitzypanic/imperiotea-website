@@ -56,6 +56,14 @@
   gap: 10px;
 }
 
+.rightImages img {
+  height: 200px;
+}
+
+.leftImage {
+  height: 410px;
+}
+
 .images img {
   object-fit: cover;
   border-radius: 10px;

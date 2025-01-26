@@ -2,7 +2,6 @@
   display: flex;
   margin-top: 20px;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .bold {
@@ -40,6 +39,8 @@
 .contactContainer {
   flex-direction: column;
 }
+
+
 }
 
 /* Estilos para móviles medianos */

@@ -20,19 +20,16 @@
 }
 
 :global(body) {
-  font-family: var(--main-font);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  padding-top: 80px;
-  background-image: url("/pattern.svg");
+  background-image: url("/backgrounds/pattern.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--quinary);
-  background-position: center;
+  border: 2px solid red;
+  font-family: var(--main-font);
 }
 
 :global(main) {
-  flex: 1 0 auto;
+  padding-top: 40px;
   max-width: 1750px;
   margin: 0 auto;
   background-color: var(--secondary);
@@ -40,4 +37,3 @@
   padding-inline: 1rem;
   padding-bottom: 1rem;
 }
-

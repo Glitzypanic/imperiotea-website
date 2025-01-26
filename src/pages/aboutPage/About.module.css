@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 400px;
+  height: 600px;
 }
 
 .heroImg {
@@ -17,7 +17,7 @@
   background-size: cover;
   background-position: center;
   border-radius: 0 0 10px 10px;
-  height: 400px;
+  height: 600px;
   width: 100%;
   filter: brightness(50%);
 }

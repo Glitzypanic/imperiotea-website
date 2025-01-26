@@ -19,7 +19,6 @@ function Goals() {
         <div>
           <img
             src="src/assets/images/activities/varias/varias7.webp"
-            height={510}
             alt=""
             className={styles.leftImage}
           />
@@ -27,13 +26,11 @@ function Goals() {
         <div className={styles.rightImages}>
           <img
             src="src/assets/images/activities/anglo-american/anglo1.webp"
-            height={250}
             alt=""
           />
           <img
             src="src/assets/images/activities/charla-cftpucv/cftpucv7.webp"
             alt=""
-            height={250}
             className={styles.image3}
           />
         </div>

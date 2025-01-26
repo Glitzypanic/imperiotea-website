@@ -1,7 +1,5 @@
 import styles from "./PersonCard.module.css";
 import { useState } from "react";
-
-// eslint-disable-next-line react/prop-types
 function PersonCard({ name, profession, img, description }) {
   // Estado para controlar la visibilidad de la modal
   const [isOpen, setIsOpen] = useState(false);

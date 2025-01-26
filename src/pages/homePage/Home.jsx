@@ -8,6 +8,13 @@ import ContactCard from "../../components/ContactCard/ContactCard";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
+// Imagenes
+import misionIcon from "/icons/mision.svg";
+import visionIcon from "/icons/vision.svg";
+import valoresIcon from "/icons/valores.svg";
+import messageIcon from "/icons/Message.svg";
+import questionIcon from "/icons/Question.svg";
+
 import newsData from "../../data/news.json";
 
 function Home() {
@@ -24,7 +31,7 @@ function Home() {
       <section className={styles.infoCards}>
         <InfoCard
           title="Misión"
-          image="src\assets\images\icons\mision.svg"
+          image={misionIcon}
           alt="Ilustracion de una mision"
         >
           <p>
@@ -54,7 +61,7 @@ function Home() {
         </InfoCard>
         <InfoCard
           title="Visión"
-          image="src\assets\images\icons\vision.svg"
+          image={visionIcon}
           alt="Ilustracion de una vision"
         >
           <p>
@@ -79,7 +86,7 @@ function Home() {
         </InfoCard>
         <InfoCard
           title="Valores"
-          image="src\assets\images\icons\valores.svg"
+          image={valoresIcon}
           alt="Ilustracion de valores"
         >
           <p>
@@ -106,7 +113,7 @@ function Home() {
       {/* Contacto */}
       <div className={styles.contactContainer}>
         <ContactCard
-          img="src\assets\images\icons\Question.svg"
+          img={questionIcon}
           title="¿Tienes alguna pregunta?"
           icon={FaWhatsapp}
           contactType="whatsapp"
@@ -114,7 +121,7 @@ function Home() {
 En Imperio TEA, entendemos que a veces necesitas hablar con alguien de inmediato. Si tienes una situación urgente o simplemente quieres una conversación rápida sobre TEA, estamos aquí para ti. ¡Contáctanos por WhatsApp para una respuesta rápida y personalizada!"
         />
         <ContactCard
-          img="src\assets\images\icons\Message.svg"
+          img={messageIcon}
           title="¿Quieres enviarnos un email?"
           icon={MdOutlineMail}
           contactType="email"
