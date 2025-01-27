@@ -64,11 +64,11 @@ function Navbar() {
               Recursos
             </Link>
           </li> */}
-          <li>
+          {/* <li>
             <Link to="/contact" className={isActive("/contact")}>
               Contacto
             </Link>
-          </li>
+          </li> */}
         </ul>
         <button
           className={`${styles.navBtn} ${styles.navCloseBtn}`}

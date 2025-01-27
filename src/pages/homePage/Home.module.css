@@ -25,8 +25,6 @@
 
 .cards {
   display: flex;
-  justify-content: center;
-  gap: 20px;
 }
 
 .contactContainer {
@@ -34,39 +32,57 @@
   justify-content: space-between;
 }
 
-/* Estilos base para móviles pequeños */
 @media (max-width: 375px) {
-.contactContainer {
-  flex-direction: column;
+  .contactContainer {
+    flex-direction: column;
+  }
+
+  .infoCards {
+    flex-wrap: wrap;
+  }
+
+  .noticeCards h2 {
+    font-size: 1.5rem;
+  }
 }
 
-
-}
-
-/* Estilos para móviles medianos */
 @media (min-width: 376px) and (max-width: 767px) {
-.contactContainer {
+  .contactContainer {
     flex-direction: column;
+  }
+
+  .infoCards {
+    flex-wrap: wrap;
   }
 }
 
-/* Estilos para tabletas en vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
-.contactContainer {
+  .contactContainer {
     flex-direction: column;
+  }
+
+  .infoCards {
+    flex-wrap: wrap;
   }
 }
 
-/* Estilos para tabletas en horizontal y laptops pequeñas */
 @media (min-width: 1024px) and (max-width: 1200px) {
-.contactContainer {
+  .contactContainer {
     flex-direction: column;
+  }
+
+  .infoCards {
+    flex-wrap: wrap;
   }
 }
 
-/* Estilos para pantallas grandes */
 @media (min-width: 1201px) {
   .contactContainer {
     gap: 20px;
+  }
+
+  .infoCards {
+    display: flex;
+    flex-direction: row;
   }
 }

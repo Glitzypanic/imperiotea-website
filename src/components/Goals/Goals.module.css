@@ -71,28 +71,46 @@
 
 /* Estilos base para móviles pequeños */
 @media (max-width: 375px) {
-.goals {
-  display: flex;
-  flex-direction: column;
-}
+  .goals {
+    display: flex;
+    flex-direction: column;
+  }
 
-.images {
-  justify-content: center;
-  margin-top: 20px;
-}
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
 
-.text {
-  width: 100%;
-}
+  .text {
+    width: 100%;
+  }
 
-.rightImages {
-  width: 100%;
-}
+  .rightImages {
+    width: 100%;
+  }
+
+  .leftImage {
+    width: 100%;
+  }
+
+  .text h4 {
+    font-size: 0.8rem;
+  }
+
+  .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Estilos para móviles medianos */
 @media (min-width: 376px) and (max-width: 767px) {
-.goals {
+  .goals {
     display: flex;
     flex-direction: column;
   }
@@ -113,7 +131,7 @@
 
 /* Estilos para tabletas en vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
-.goals {
+  .goals {
     display: flex;
     flex-direction: column;
   }
@@ -149,13 +167,13 @@
   }
 
   .leftImage {
-   width: 300px;
+    width: 300px;
   }
 }
 
 /* Estilos para pantallas grandes */
 @media (min-width: 1201px) {
-.images {
+  .images {
     justify-content: center;
     margin-top: 20px;
   }

@@ -24,14 +24,10 @@
   width: 750px;
 }
 
-.right {
-  background-image: url("/backgrounds/descripcion.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  height: 400px;
+.right img {
   border-radius: 0 10px 10px 0;
+  width: 100%;
+  opacity: 0.5;
 }
 
 .left {
@@ -42,16 +38,22 @@
 /* Estilos base para móviles pequeños */
 @media (max-width: 375px) {
   .description {
-    display: grid;
+    display: flex;
     flex-direction: column;
+  }
+
+  .description h2 {
+    font-size: 1.5rem;
   }
 
   .description p {
     width: 100%;
+    font-size: 0.8rem;
   }
 
-  .right {
-    height: 100%;
+  .right img {
+    border-radius: 0 0 10px 10px;
+    width: 100%;
   }
 }
 
@@ -69,32 +71,32 @@
 /* Estilos para tabletas en vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
   .description p {
-      width: 470px;
-    }
-  
-    .right {
-      height: 100%;
-    }
+    width: 470px;
+  }
+
+  .right {
+    height: 100%;
+  }
 }
 
 /* Estilos para tabletas en horizontal y laptops pequeñas */
 @media (min-width: 1024px) and (max-width: 1200px) {
   .description p {
-      width: 560px;
-    }
-  
-    .right {
-      height: 100%;
-    }
+    width: 560px;
+  }
+
+  .right {
+    height: 100%;
+  }
 }
 
 /* Estilos para pantallas grandes */
 @media (min-width: 1201px) {
   .description p {
-      width: 100%;
-    }
-  
-    .right {
-      height: 100%;
-    }
+    width: 100%;
+  }
+
+  .right {
+    height: 100%;
+  }
 }

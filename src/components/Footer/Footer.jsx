@@ -114,7 +114,7 @@ function Footer() {
           <Section title="Dirección">
             <ul>
               <li className={styles.sectionItem}>
-                <SiGooglemaps />
+                <SiGooglemaps className={styles.addressIcon} />
                 Arturo Pérez Canto #612
               </li>
               <li>
@@ -122,7 +122,7 @@ function Footer() {
                   onClick={openGoogleMaps}
                   className={`${styles.mapButton} ${styles.interactiveItem}`}
                 >
-                  <IoMapSharp />
+                  <IoMapSharp className={styles.addressIcon} />
                   Ver en el mapa
                 </button>
               </li>

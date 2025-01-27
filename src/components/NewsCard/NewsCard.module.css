@@ -73,3 +73,127 @@
 .button:hover {
   background-color: var(--hover);
 }
+
+/* Estilos base para móviles pequeños */
+@media (max-width: 375px) {
+  .card {
+    width: 100%;
+  }
+
+  .image img {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 1.25rem !important;
+    height: 40px;
+  }
+
+  .button {
+    font-size: 0.75rem;
+  }
+
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+}
+
+/* Estilos para móviles medianos */
+@media (min-width: 376px) and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+
+  .image img {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 1.25rem !important;
+    height: 40px;
+  }
+
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+}
+
+/* Estilos para tabletas en vertical */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 100%;
+  }
+
+  .image img {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 1.25rem !important;
+    height: 40px;
+  }
+
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+}
+
+/* Estilos para tabletas en horizontal y laptops pequeñas */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .card {
+    width: 100%;
+  }
+
+  .image img {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 1.25rem !important;
+    height: 40px;
+  }
+
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1201px) {
+  .card {
+    width: 100%;
+  }
+
+  .image img {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 1.25rem !important;
+    height: 40px;
+  }
+
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+  }
+}

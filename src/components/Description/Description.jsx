@@ -1,4 +1,5 @@
 import styles from "./Description.module.css";
+import Image5 from "/backgrounds/descripcion.webp";
 
 function Description() {
   return (
@@ -20,7 +21,9 @@ function Description() {
           realizar sesiones de calidad a cada uno de los socios.
         </p>
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <img src={Image5} alt="Descripción" />
+      </div>
     </section>
   );
 }

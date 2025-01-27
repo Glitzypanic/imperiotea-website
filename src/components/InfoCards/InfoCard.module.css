@@ -20,3 +20,30 @@
   font-size: 1.1rem;
   width: 96%;
 }
+
+/* Estilos base para móviles pequeños */
+@media (max-width: 375px) {
+  .infoCard h3 {
+    font-size: 1.5rem;
+  }
+
+  .infoCard p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Estilos para móviles medianos */
+@media (min-width: 376px) and (max-width: 767px) {
+}
+
+/* Estilos para tabletas en vertical */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Estilos para tabletas en horizontal y laptops pequeñas */
+@media (min-width: 1024px) and (max-width: 1200px) {
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1201px) {
+}
