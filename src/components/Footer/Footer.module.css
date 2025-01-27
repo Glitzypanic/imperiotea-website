@@ -43,7 +43,6 @@
 .socialTitle {
   font-weight: bold;
   font-size: 1.3rem;
-  text-align: center;
 }
 
 .contactIcon {
@@ -54,7 +53,6 @@
 .socialList {
   display: flex;
   gap: 15px;
-  justify-content: center;
 }
 
 .socialIcon {
@@ -137,6 +135,7 @@
 
 /* Elementos interactivos */
 .interactiveItem {
+  width: fit-content;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -160,7 +159,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
   transition: color 0.3s ease;
 }
 
