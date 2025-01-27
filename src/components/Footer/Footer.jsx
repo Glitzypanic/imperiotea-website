@@ -77,7 +77,7 @@ function Footer() {
                         "/": "Inicio",
                         "/about": "Quiénes somos",
                         "/news": "Blog",
-                        "/contact": "Contacto",
+                        // "/contact": "Contacto",
                       }[path]
                     }
                   </Link>
