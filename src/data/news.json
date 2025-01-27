@@ -5,7 +5,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Actividad",
-    "image": "src/assets/images/activities/dia-niño/Dia-niño3.webp",
+    "image": "/images/activities/dia-niño/Dia-niño3.webp",
     "link": "/noticias/1"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Actividad",
-    "image": "src/assets/images/activities/fiestas-patrias/fiestas-patrias4.webp",
+    "image": "/images/activities/fiestas-patrias/fiestas-patrias4.webp",
     "link": "/noticias/1"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Taller",
-    "image": "src/assets/images/activities/taller-equinoterapia/taller-equino4.webp",
+    "image": "/images/activities/taller-equinoterapia/taller-equino4.webp",
     "link": "/noticias/1"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Actividad",
-    "image": "src/assets/images/activities/Dia-mundial-autismo/dia-autismo4.webp",
+    "image": "/images/activities/Dia-mundial-autismo/dia-autismo4.webp",
     "link": "/noticias/1"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Charla",
-    "image": "src/assets/images/activities/anglo-american/anglo1.webp",
+    "image": "/images/activities/anglo-american/anglo1.webp",
     "link": "/noticias/1"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Actividad",
-    "image": "src/assets/images/activities/banco-estado/banco-estado4.webp",
+    "image": "/images/activities/banco-estado/banco-estado4.webp",
     "link": "/noticias/1"
   },
   {
@@ -59,7 +59,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Charla",
-    "image": "src/assets/images/activities/curso-auxilio/curso-auxilio3.webp",
+    "image": "/images/activities/curso-auxilio/curso-auxilio3.webp",
     "link": "/noticias/1"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Actividad",
-    "image": "src/assets/images/activities/taller-fondoNacional/fondoNacional4.webp",
+    "image": "/images/activities/taller-fondoNacional/fondoNacional4.webp",
     "link": "/noticias/1"
   },
   {
@@ -77,7 +77,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Actividad",
-    "image": "src/assets/images/activities/parque-sayayin.webp",
+    "image": "/images/activities/parque-sayayin.webp",
     "link": "/noticias/1"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Descripción de la noticia 1",
     "date": "2024-06-10",
     "type": "Actividad",
-    "image": "src/assets/images/activities/charla-cftpucv/cftpucv10.webp",
+    "image": "/images/activities/charla-cftpucv/cftpucv10.webp",
     "link": "/noticias/1"
   }
 ]

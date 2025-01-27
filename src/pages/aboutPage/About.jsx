@@ -84,7 +84,7 @@ function About() {
           <PersonCard
             name="Cecilia Díaz Guajardo"
             profession="Terapeuta Ocupacional especializada en infancia"
-            img="src/assets/images/people/ceci.webp"
+            img="/images/people/ceci.webp"
             description={
               "Terapeuta Ocupacional - Universidad de Playa Ancha\n" +
               "Diplomado experto en autismo - Hyperpraxis\n" +
@@ -97,7 +97,7 @@ function About() {
           <PersonCard
             name="John Iglesias Pérez"
             profession="Fonoaudiólogo"
-            img="src\assets\images\people\john.webp"
+            img="\images\people\john.webp"
             description={
               "Formación en Condición del Espectro Autista\n" +
               "Formación en Apraxia del Habla Infantil\n" +
@@ -111,7 +111,7 @@ function About() {
           <PersonCard
             name="Macarena Escobar Coccio"
             profession="Fonoaudióloga"
-            img="src\assets\images\people\macarena.webp"
+            img="\images\people\macarena.webp"
             description={
               "Evaluación, diagnóstico e intervención del lenguaje, habla y comunicación.\n" +
               "Enfocada en trastorno del Espectro Autista, inicio tardío y trastornos del lenguaje.\n" +
@@ -124,7 +124,7 @@ function About() {
           <PersonCard
             name="Ornella Maldonado"
             profession="Psicóloga Clínica"
-            img="src\assets\images\people\ornella.webp"
+            img="\images\people\ornella.webp"
             description={
               "Diplomada en psico diagnóstico Infanto-Juvenil\n" +
               "Acreditación Oficial Clínica Internacional ADOS-2\n" +

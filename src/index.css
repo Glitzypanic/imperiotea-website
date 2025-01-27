@@ -1,6 +1,7 @@
-/* https://github.com/alex-e-leon/reset-css-complete */
-
-/* General reset */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/*****************************
+  Reset CSS Completo
+******************************/
 html,
 body,
 div,
@@ -96,7 +97,6 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -112,7 +112,6 @@ section {
 }
 
 body {
-  /* line-height is set by :root */
   line-height: inherit;
 }
 
@@ -161,24 +160,18 @@ button {
   cursor: pointer;
   line-height: inherit;
   color: inherit;
-
-  /* Corrects inability to style clickable `input` types in iOS */
   appearance: none;
 }
 
 button::-moz-focus-inner {
-  /* Remove excess padding and border in Firefox 4+ */
   border: 0;
   padding: 0;
 }
-
-/* safari requires some special resets for input type="search" */
 
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* ie 11 has it's own magic font-size rules for sub and sup */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   sub,
   sup {
@@ -186,16 +179,47 @@ input[type="search"]::-webkit-search-decoration {
   }
 }
 
-/* some sensible global styles */
 :root {
-  /* prevents mobile browsers from sometimes scaling text */
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-/* sets box-sizing back to the sane border-box for all elements */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/*****************************
+  Variables CSS y Estilos Globales
+******************************/
+
+:root {
+  --primary: #1c5f9c;
+  --secondary: #f9f9f9;
+  --tertiary: #333333;
+  --quaternary: #fafafa;
+  --quinary: #fff8dc;
+  --hover: #184e80;
+
+  --main-font: "Raleway", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("/backgrounds/pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--quinary);
+  font-family: var(--main-font);
+}
+
+main {
+  padding-top: 40px;
+  max-width: 1750px;
+  margin: 0 auto;
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
 }

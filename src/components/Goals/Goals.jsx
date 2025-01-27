@@ -1,4 +1,7 @@
 import styles from "./Goals.module.css";
+import image1 from "/images/activities/varias/varias7.webp";
+import image2 from "/images/activities/anglo-american/anglo1.webp";
+import image3 from "/images/activities/charla-cftpucv/cftpucv7.webp";
 
 function Goals() {
   return (
@@ -17,22 +20,11 @@ function Goals() {
       </div>
       <div className={styles.images}>
         <div>
-          <img
-            src="src/assets/images/activities/varias/varias7.webp"
-            alt=""
-            className={styles.leftImage}
-          />
+          <img src={image1} alt="" className={styles.leftImage} />
         </div>
         <div className={styles.rightImages}>
-          <img
-            src="src/assets/images/activities/anglo-american/anglo1.webp"
-            alt=""
-          />
-          <img
-            src="src/assets/images/activities/charla-cftpucv/cftpucv7.webp"
-            alt=""
-            className={styles.image3}
-          />
+          <img src={image2} alt="" />
+          <img src={image3} alt="" className={styles.image3} />
         </div>
       </div>
     </section>
