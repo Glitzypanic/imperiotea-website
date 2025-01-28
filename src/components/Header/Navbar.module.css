@@ -42,7 +42,12 @@ header .navBtn {
   font-size: 1.8rem;
 }
 
-@media only screen and (max-width: 375px) {
+@media (max-width: 375px) {
+  .navbar {
+    padding-inline: 20px;
+    height: 80px;
+  }
+
   header .navBtn {
     display: block;
   }
