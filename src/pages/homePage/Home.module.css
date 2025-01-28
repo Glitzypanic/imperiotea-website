@@ -32,6 +32,7 @@
   justify-content: space-between;
 }
 
+/* Estilos base para móviles pequeños */
 @media (max-width: 375px) {
   .contactContainer {
     flex-direction: column;
@@ -44,8 +45,17 @@
   .noticeCards h2 {
     font-size: 1.5rem;
   }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .noticeCards {
+    padding: 10px;
+  }
 }
 
+/* Estilos para móviles medianos */
 @media (min-width: 376px) and (max-width: 767px) {
   .contactContainer {
     flex-direction: column;
@@ -54,8 +64,21 @@
   .infoCards {
     flex-wrap: wrap;
   }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .noticeCards h2 {
+    font-size: 1.7rem;
+  }
+
+  .noticeCards {
+    padding: 12px;
+  }
 }
 
+/* Estilos para tabletas en vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
   .contactContainer {
     flex-direction: column;
@@ -64,18 +87,43 @@
   .infoCards {
     flex-wrap: wrap;
   }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .noticeCards h2 {
+    font-size: 1.8rem;
+  }
+
+  .noticeCards {
+    padding: 15px;
+  }
 }
 
+/* Estilos para tabletas en horizontal y laptops pequeñas */
 @media (min-width: 1024px) and (max-width: 1200px) {
   .contactContainer {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .infoCards {
     flex-wrap: wrap;
   }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .noticeCards h2 {
+    font-size: 1.9rem;
+  }
 }
 
+/* Estilos para pantallas grandes */
 @media (min-width: 1201px) {
   .contactContainer {
     gap: 20px;
@@ -84,5 +132,13 @@
   .infoCards {
     display: flex;
     flex-direction: row;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .noticeCards h2 {
+    font-size: 2rem;
   }
 }

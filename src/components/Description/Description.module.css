@@ -50,6 +50,7 @@
   .description {
     display: flex;
     flex-direction: column;
+    height: auto;
   }
 
   .description h2 {
@@ -64,24 +65,58 @@
   .right img {
     border-radius: 0 0 10px 10px;
     width: 100%;
+    max-height: none;
+  }
+
+  .right {
+    height: auto;
+  }
+
+  .left {
+    padding: 10px;
   }
 }
 
 /* Estilos para móviles medianos */
 @media (min-width: 376px) and (max-width: 767px) {
+  .description {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .description h2 {
+    font-size: 1.7rem;
+  }
+
   .description p {
-    width: 460px;
+    width: 100%;
+    font-size: 1rem;
   }
 
   .right {
-    height: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .right img {
+    border-radius: 0 0 10px 10px;
   }
 }
 
 /* Estilos para tabletas en vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .description {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+
+  .description h2 {
+    font-size: 1.8rem;
+  }
+
   .description p {
-    width: 470px;
+    width: 100%;
+    font-size: 1.05rem;
   }
 
   .right {
@@ -91,8 +126,13 @@
 
 /* Estilos para tabletas en horizontal y laptops pequeñas */
 @media (min-width: 1024px) and (max-width: 1200px) {
+  .description h2 {
+    font-size: 1.9rem;
+  }
+
   .description p {
-    width: 560px;
+    width: 100%;
+    font-size: 1.1rem;
   }
 
   .right {
@@ -102,8 +142,18 @@
 
 /* Estilos para pantallas grandes */
 @media (min-width: 1201px) {
+  .description {
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+  }
+
+  .description h2 {
+    font-size: 2rem;
+  }
+
   .description p {
-    width: 100%;
+    width: 750px;
+    font-size: 1.125rem;
   }
 
   .right {
