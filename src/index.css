@@ -225,3 +225,17 @@ main {
   padding-inline: 0.5rem; /* Padding reducido para móviles */
   padding-bottom: 1rem;
 }
+
+/* Media query para tabletas (a partir de 768px) */
+@media (min-width: 768px) {
+  main {
+    padding-inline: 1rem; /* Padding aumentado para tabletas */
+  }
+}
+
+/* Media query para laptops y pantallas grandes (a partir de 1024px) */
+@media (min-width: 1024px) {
+  main {
+    padding-inline: 2rem; /* Padding aumentado para laptops y pantallas grandes */
+  }
+}
