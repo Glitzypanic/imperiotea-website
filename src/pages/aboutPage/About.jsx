@@ -131,6 +131,19 @@ function About() {
               "Certificación Avanzada en WISC-V y ADI-R\n"
             }
           />
+          <PersonCard
+            name="Maricela González"
+            profession="Educadora Diferencial"
+            img="\images\people\maricela.webp"
+            description={
+              "Psicopedagoga licensiada en eduación\n" +
+              "Especialista en:\n" +
+              "Dificultades de aprendizaje - TEA - NEE\n" +
+              "Adquisición a la lecto escritura y cálculo\n" +
+              "Estrategias de comprensión lectora\n" +
+              "Atención temprana a niños(as) que presenten alguna NEE desde los 2 años\n"
+            }
+          />
         </div>
       </div>
     </section>

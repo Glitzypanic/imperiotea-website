@@ -12,7 +12,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 100%;
+  width: 100vw;
   background: var(--secondary);
   transition: transform 0.3s ease;
 }

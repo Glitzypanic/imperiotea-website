@@ -188,6 +188,11 @@ strong {
     padding-inline: 2rem;
   }
 
+  .historyContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
   .heroContainer {
     height: 600px;
   }
