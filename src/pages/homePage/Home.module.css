@@ -94,7 +94,7 @@
   }
 
   .noticeCards h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .noticeCards {
@@ -107,6 +107,7 @@
   .contactContainer {
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .infoCards {

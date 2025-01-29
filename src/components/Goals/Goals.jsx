@@ -19,12 +19,12 @@ function Goals() {
         </p>
       </div>
       <div className={styles.images}>
-        <div>
+        <div className={styles.leftImages}>
           <img src={image1} alt="" className={styles.leftImage} />
         </div>
         <div className={styles.rightImages}>
-          <img src={image2} alt="" />
-          <img src={image3} alt="" className={styles.image3} />
+          <img src={image2} alt="" className={styles.rightImages1} />
+          <img src={image3} alt="" className={styles.rightImages2} />
         </div>
       </div>
     </section>

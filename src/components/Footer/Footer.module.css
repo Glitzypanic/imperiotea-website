@@ -1,28 +1,30 @@
+/* Estilos base (móviles pequeños) */
 .footer {
   font-family: var(--secondary-font);
   display: flex;
-  flex-direction: column; /* Cambiamos a columna para todas las versiones */
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  font-size: 1.2rem;
+  gap: 20px;
+  font-size: 0.8rem;
   background: url("/backgrounds/wavesNegative.svg") center, var(--quinary);
   color: var(--tertiary);
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-  padding-inline: 100px;
+  padding-inline: 20px;
   margin-top: auto;
 }
 
 .logo {
   border-radius: 10px;
-  height: 350px;
-  order: -1; /* Asegura que el logo sea el primer elemento */
+  height: 200px;
+  order: -1;
+  margin-bottom: 20px;
 }
 
 .bottom {
   display: flex;
-  flex-direction: column; /* Para móviles, aseguramos que sea columna */
+  flex-direction: column;
   gap: 20px;
-  width: 100%; /* Ajusta para que ocupe todo el ancho disponible */
+  width: 100%;
 }
 
 .sectionContainer {
@@ -36,28 +38,41 @@
 .socialTitle,
 .addressTitle {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 5px;
 }
 
-.list ul,
-.listContact ul,
+.interactiveList,
+.contactList,
 .socialList,
-.addressContainer ul {
+.addressList {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.list ul li,
-.listContact ul li {
-  list-style: none;
+.addressList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.interactiveList,
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.interactiveList li,
+.contactList li {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   transition: color 0.3s ease;
 }
 
-.list ul li:hover,
-.listContact ul li:hover {
+.interactiveList li:hover,
+.contactList li:hover {
   color: #070505;
   font-weight: 400;
 }
@@ -65,33 +80,33 @@
 .contactIcon,
 .socialIcon,
 .addressIcon {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--tertiary);
 }
 
 .socialIcon {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .socialIcon:hover {
   color: #070505;
 }
 
-.socialItem {
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  cursor: pointer;
+.socialList {
+  display: flex;
+  gap: 10px;
 }
 
-.contactItem,
-.addressContainer ul li {
+.socialItem,
+.contactItems,
+.addressContainer {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .mapButton {
+  text-decoration: underline;
   background: none;
   border: none;
   padding: 0;
@@ -102,88 +117,94 @@
   cursor: pointer;
 }
 
-/* Estilos base para móviles pequeños */
-@media (max-width: 375px) {
+/* Móviles medianos (376px en adelante) */
+@media (min-width: 376px) {
   .footer {
-    padding-inline: 10px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding-inline: 30px;
+  }
+
+  .interactiveList li,
+  .contactList li {
+    font-size: 0.9rem;
+  }
+
+  .contactIcon,
+  .socialIcon,
+  .addressIcon {
+    font-size: 18px;
+  }
+
+  .socialIcon {
+    font-size: 28px;
+  }
+}
+
+/* Tabletas (768px en adelante) */
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1rem;
+    padding-inline: 40px;
   }
 
   .logo {
-    height: 200px;
-    margin-bottom: 20px; /* Espacio entre el logo y las secciones */
+    height: 250px;
   }
 
   .sectionTitle,
   .socialTitle,
   .addressTitle {
+    font-size: 1.1rem;
+  }
+
+  .interactiveList li,
+  .contactList li {
     font-size: 1rem;
   }
 
   .contactIcon,
   .socialIcon,
   .addressIcon {
-    font-size: 15px;
+    font-size: 20px;
   }
 
-  .socialList {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* Estilos para móviles medianos */
-@media (min-width: 376px) and (max-width: 767px) {
-  .footer {
-    padding-inline: 20px;
-    font-size: 0.9rem;
-  }
-
-  .logo {
-    height: 200px;
-    margin-bottom: 20px;
-  }
-
-  .socialList {
-    flex-direction: column;
-    align-items: flex-start;
+  .socialIcon {
+    font-size: 30px;
   }
 }
 
-/* Estilos para tabletas en vertical */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Laptops pequeñas (1024px en adelante) */
+@media (min-width: 1024px) {
   .footer {
-    padding-inline: 30px;
-    font-size: 1rem;
-  }
-
-  .logo {
-    height: 250px;
-    margin-bottom: 20px;
-  }
-
-  .socialList {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
-  }
-}
-
-/* Estilos para tabletas en horizontal y laptops pequeñas */
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .footer {
     padding-inline: 50px;
+    padding-top: 20px;
   }
 
   .logo {
     height: 300px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    flex: 0 0 auto;
   }
 
   .bottom {
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+
+  .sectionContainer {
+    flex: 1;
+    max-width: 250px; /* Aumenta el max-width si es necesario */
+    overflow: visible; /* Asegura que no se corte el contenido */
   }
 }
 
-/* Estilos para pantallas grandes */
+/* Pantallas grandes (1201px en adelante) */
 @media (min-width: 1201px) {
   .footer {
     padding-inline: 100px;
@@ -193,7 +214,9 @@
     height: 350px;
   }
 
-  .bottom {
-    flex-direction: row;
+  .sectionTitle,
+  .socialTitle,
+  .addressTitle {
+    font-size: 1.3rem;
   }
 }

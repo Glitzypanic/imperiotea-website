@@ -21,15 +21,8 @@ function Navbar() {
         <Link to="/">
           <img src="/logo-imperio1.png" alt="Logo" height={140} width={120} />
         </Link>
-        <motion.nav
-          initial={{ y: "-100%" }} // Posición inicial fuera de la vista
-          animate={{ y: isMenuOpen ? "0%" : "-100%" }} // Anima a la vista si está abierto
-          transition={{ type: "spring", stiffness: 260, damping: 20 }} // Tipo de transición
-          className={`${styles.nav} ${isMenuOpen ? styles.responsiveNav : ""}`}
-          style={{ backgroundColor: "#1c5f9c", color: "white" }}
-          role="navigation"
-        >
-          <ul>
+        <nav className={styles.nav}>
+          <ul className={styles.navList}>
             <li>
               <Link to="/" onClick={closeMenu}>
                 Inicio
@@ -45,16 +38,8 @@ function Navbar() {
                 Noticias
               </Link>
             </li>
-            {/* Puedes añadir más enlaces aquí */}
           </ul>
-          <button
-            className={`${styles.navBtn} ${styles.navCloseBtn}`}
-            onClick={toggleMenu}
-            aria-label="Cerrar menú"
-          >
-            <FaTimes />
-          </button>
-        </motion.nav>
+        </nav>
         <button
           className={styles.navBtn}
           onClick={toggleMenu}
@@ -62,14 +47,52 @@ function Navbar() {
         >
           <FaBars />
         </button>
+        <motion.div
+          className={`${styles.overlay} ${
+            isMenuOpen ? styles.showOverlay : ""
+          }`}
+          onClick={toggleMenu}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isMenuOpen ? 1 : 0 }}
+          transition={{ duration: 0.1 }}
+        >
+          <motion.nav
+            className={`${styles.nav} ${
+              isMenuOpen ? styles.responsiveNav : ""
+            }`}
+            style={{ backgroundColor: "#1c5f9c", color: "white" }}
+            role="navigation"
+            initial={{ x: "100%" }}
+            animate={{ x: isMenuOpen ? 0 : "100%" }}
+            transition={{ duration: 0.3 }}
+          >
+            <ul>
+              <li>
+                <Link to="/" onClick={closeMenu}>
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" onClick={closeMenu}>
+                  Quiénes somos
+                </Link>
+              </li>
+              <li>
+                <Link to="/news" onClick={closeMenu}>
+                  Noticias
+                </Link>
+              </li>
+            </ul>
+            <button
+              className={`${styles.navBtn} ${styles.navCloseBtn}`}
+              onClick={toggleMenu}
+              aria-label="Cerrar menú"
+            >
+              <FaTimes />
+            </button>
+          </motion.nav>
+        </motion.div>
       </header>
-      <motion.div
-        className={`${styles.overlay} ${isMenuOpen ? styles.showOverlay : ""}`}
-        onClick={toggleMenu}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: isMenuOpen ? 0.1 : 0 }}
-        transition={{ duration: 0.1 }}
-      ></motion.div>
     </>
   );
 }

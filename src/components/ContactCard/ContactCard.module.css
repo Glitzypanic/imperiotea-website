@@ -80,16 +80,46 @@
 
 /* Estilos para móviles medianos */
 @media (min-width: 376px) and (max-width: 767px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    width: 100%;
+  }
 }
 
 /* Estilos para tabletas en vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
-}
+  .contact {
+    flex-direction: row;
+    align-items: center;
+  }
 
-/* Estilos para tabletas en horizontal y laptops pequeñas */
-@media (min-width: 1024px) and (max-width: 1200px) {
-}
+  .contactInfo {
+    margin-top: 0;
+    margin-left: 20px;
+  }
 
-/* Estilos para pantallas grandes */
-@media (min-width: 1201px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    width: 100%;
+  }
 }

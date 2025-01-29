@@ -34,10 +34,24 @@
 
 /* Estilos para móviles medianos */
 @media (min-width: 376px) and (max-width: 767px) {
+  .infoCard h3 {
+    font-size: 1.5rem;
+  }
+
+  .infoCard p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Estilos para tabletas en vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .infoCard h3 {
+    font-size: 2rem;
+  }
+
+  .infoCard p {
+    font-size: 1rem;
+  }
 }
 
 /* Estilos para tabletas en horizontal y laptops pequeñas */

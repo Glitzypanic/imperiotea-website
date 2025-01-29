@@ -1,9 +1,10 @@
+/* Estilos base para móviles pequeños (Mobile First) */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 140px;
-  height: 100px;
+  padding-inline: 20px;
+  height: 80px;
   font-family: var(--secondary-font);
   font-size: 1.5rem;
   font-weight: 500;
@@ -20,20 +21,38 @@
   color: var(--primary);
 }
 
-header nav ul {
-  display: none; /* Oculto por defecto en escritorio */
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.5s ease-out;
+  background: var(--secondary);
+}
+
+header nav.responsiveNav {
+  transform: scale(1);
 }
 
 header nav ul {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  gap: 30px;
+  padding: 0;
 }
 
-/* header nav li:hover {
-  color: var(--primary);
-} */
+header nav li {
+  font-size: 1.5rem;
+  text-align: center;
+}
 
 header .navBtn {
   padding: 5px;
@@ -41,12 +60,18 @@ header .navBtn {
   background: transparent;
   border: none;
   outline: none;
-  display: none;
+  display: block;
   font-size: 1.8rem;
 }
 
+nav .navCloseBtn {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+}
+
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -57,212 +82,78 @@ header .navBtn {
   z-index: 999;
 }
 
+.nav.responsiveNav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav.responsiveNav li {
+  font-size: 2rem;
+}
+
 .overlay.showOverlay {
-  display: block;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Estilos base para móviles pequeños */
-@media (max-width: 375px) {
-  .navbar {
-    padding-inline: 20px;
-    height: 80px;
-  }
-
-  .navbar.navbarHidden {
-    transform: translateY(-100%);
-  }
-
-  header .navBtn {
-    display: block;
-  }
-
-  header nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: scale(0);
-    transform-origin: top right;
-    transition: transform 0.5s ease-out;
-  }
-
-  header nav.responsiveNav {
-    transform: scale(1);
-  }
-
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 0;
-  }
-
-  header nav li {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  nav .navCloseBtn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
-}
-
-/* Estilos para móviles medianos */
-@media (min-width: 376px) and (max-width: 767px) {
-  .navbar {
-    padding-inline: 30px;
-    height: 80px;
-  }
-
-  .navbar.navbarHidden {
-    transform: translateY(-100%);
-  }
-
-  header .navBtn {
-    display: block;
-  }
-
-  header nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: scale(0);
-    transform-origin: top right;
-    transition: transform 0.5s ease-out;
-  }
-
-  header nav.responsiveNav {
-    transform: scale(1);
-  }
-
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  header nav li {
-    font-size: 1.6rem;
-  }
-}
-
-/* Estilos para tabletas en vertical */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Añadimos estilos específicos para pantallas medianas */
+@media (min-width: 768px) {
   .navbar {
     padding-inline: 40px;
+    height: 90px;
   }
 
-  header .navBtn {
-    display: block;
+  .navBtn {
+    display: none; /* Asegura que el botón de menú no se muestre en pantallas medianas */
   }
 
-  header nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--secondary);
+  .nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: scale(0);
-    transform-origin: top right;
-    transition: transform 0.5s ease-out;
+    flex-direction: row;
+    gap: 20px;
   }
 
-  header nav.responsiveNav {
-    transform: scale(1);
-  }
-
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  header nav li {
-    font-size: 1.7rem;
+  .nav li {
+    font-size: 1.2rem;
   }
 }
 
-/* Estilos para tabletas en horizontal y laptops pequeñas */
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .navbar {
-    padding-inline: 60px;
-  }
-
-  header .navBtn {
-    display: block;
-  }
-
-  header nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: scale(0);
-    transform-origin: top right;
-    transition: transform 0.5s ease-out;
-  }
-
-  header nav.responsiveNav {
-    transform: scale(1);
-  }
-
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  header nav li {
-    font-size: 1.8rem;
-  }
-}
-
-/* Estilos para pantallas grandes */
+/* Añadimos estilos específicos para el nav en pantallas grandes */
 @media (min-width: 1201px) {
   .navbar {
     padding-inline: 140px;
+    height: 100px;
+    justify-content: space-between;
   }
 
-  header nav ul {
+  .nav {
+    position: static;
+    width: auto;
+    height: auto;
+    display: block;
+    transform: none;
+    background: transparent;
+  }
+
+  .nav ul {
     display: flex;
-    gap: 20px; /* Ajusta el espacio entre los elementos */
+    flex-direction: row;
+    gap: 20px;
   }
 
-  header .navBtn {
-    display: none; /* Ocultamos el botón de menú en pantallas grandes */
+  .navBtn {
+    display: none !important; /* Asegura que el botón de menú no se muestre en pantallas grandes */
   }
 
-  header nav li {
+  .nav li {
     font-size: 1.5rem;
+  }
+
+  .nav.responsiveNav {
+    transform: none;
+  }
+
+  .overlay {
+    display: none !important; /* Asegura que el overlay no se muestre en pantallas grandes */
   }
 }

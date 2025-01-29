@@ -1,5 +1,4 @@
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { IoMapSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -10,11 +9,9 @@ import styles from "./Footer.module.css";
 function Footer() {
   const openGoogleMaps = () => {
     const address = "Pérez Canto #612, La Caleta, Valparaiso";
-
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
       address
     )}`;
-
     window.open(googleMapsUrl, "_blank");
   };
 
@@ -41,7 +38,6 @@ function Footer() {
   ];
 
   // Componente reutilizable para secciones
-  // eslint-disable-next-line react/prop-types
   const Section = ({ title, children, isSocial }) => (
     <div className={styles.sectionContainer}>
       <h3
@@ -68,7 +64,7 @@ function Footer() {
       <div className={styles.bottom}>
         <div>
           <Section title="Enlaces">
-            <ul>
+            <ul className={styles.interactiveList}>
               {["/", "/about", "/news", "/contact"].map((path, index) => (
                 <li key={index} className={styles.interactiveItem}>
                   <Link to={path}>
@@ -77,7 +73,7 @@ function Footer() {
                         "/": "Inicio",
                         "/about": "Quiénes somos",
                         "/news": "Blog",
-                        // "/contact": "Contacto",
+                        "/contact": "Contacto",
                       }[path]
                     }
                   </Link>
@@ -87,9 +83,9 @@ function Footer() {
           </Section>
 
           <Section title="Contacto">
-            <ul>
+            <ul className={styles.contactList}>
               {contactItems.map((item, index) => (
-                <li key={index} className={styles.sectionItem}>
+                <li key={index} className={styles.contactItems}>
                   {item.icon}
                   {item.text}
                 </li>
@@ -112,8 +108,8 @@ function Footer() {
           </Section>
 
           <Section title="Dirección">
-            <ul>
-              <li className={styles.sectionItem}>
+            <ul className={styles.addressList}>
+              <li className={styles.addressContainer}>
                 <SiGooglemaps className={styles.addressIcon} />
                 Arturo Pérez Canto #612
               </li>

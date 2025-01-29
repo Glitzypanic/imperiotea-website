@@ -1,6 +1,7 @@
+/* Estilos base (móviles) */
 .goals {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -8,32 +9,32 @@
 }
 
 .text {
-  width: 50%;
-  align-content: center;
+  width: 100%;
 }
 
 .text h4 {
   font-family: var(--main-font);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: var(--primary);
 }
 
 .text h2 {
   font-family: var(--main-font);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .text p {
   font-family: var(--secondary-font);
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 .text button {
   margin-top: 20px;
   padding: 10px 20px;
+  width: 100%;
   background-color: var(--primary);
   color: var(--secondary);
   border: none;
@@ -47,50 +48,33 @@
 
 .images {
   display: flex;
+  flex-direction: column;
   gap: 10px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .rightImages {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.rightImages img {
-  height: 200px;
+  width: 100%;
 }
 
 .leftImage {
-  height: 410px;
+  width: 100%;
+  height: auto;
 }
 
 .images img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
 }
 
-/* Estilos base para móviles pequeños */
-@media (max-width: 375px) {
-  .goals {
-    flex-direction: column;
-  }
-
-  .images,
-  .rightImages {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .leftImage {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .text {
-    width: 100%;
-  }
-
+/* Móviles medianos (376px en adelante) */
+@media (min-width: 376px) {
   .text h4 {
     font-size: 0.8rem;
   }
@@ -104,132 +88,91 @@
   }
 
   .text button {
-    width: 100%;
+    width: auto;
   }
 }
 
-/* Estilos para móviles medianos */
-@media (min-width: 376px) and (max-width: 767px) {
-  .goals {
-    flex-direction: column;
-  }
-
-  .images,
-  .rightImages {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .leftImage {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .text {
-    width: 100%;
-  }
-
+/* Tabletas (768px en adelante) */
+@media (min-width: 768px) {
   .text h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .text h2 {
-    font-size: 1.7rem;
-  }
-
-  .text p {
-    font-size: 0.9rem;
-  }
-}
-
-/* Estilos para tabletas en vertical */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .goals {
-    flex-direction: column;
-  }
-
-  .images {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .rightImages {
-    flex-direction: column;
-    width: 50%;
-  }
-
-  .leftImage {
-    width: 50%;
-    height: auto;
-  }
-
-  .text {
-    width: 100%;
-    padding-bottom: 20px;
-  }
-
-  .text h4 {
-    font-size: 0.95rem;
-  }
-
-  .text h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .text p {
     font-size: 1rem;
   }
-}
-
-/* Estilos para tabletas en horizontal y laptops pequeñas */
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .goals {
-    flex-direction: row;
-  }
 
   .images {
     flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .leftImages {
+    display: flex;
     width: 50%;
+    /* Ajusta este valor según necesites */
   }
 
   .rightImages {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
 
-  .leftImage {
+  .rightImage1,
+  .rightImage2 {
     width: 100%;
-    height: auto;
+    height: 300px; /* Ajusta este valor según necesites */
+  }
+}
+
+/* Laptops pequeñas y tabletas horizontales (1024px en adelante) */
+@media (min-width: 1024px) {
+  .goals {
+    flex-direction: row;
+    align-items: center;
   }
 
   .text {
     width: 50%;
     padding-right: 20px;
   }
+
+  .images {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .rightImages {
+    width: 50%;
+  }
+
+  .leftImage {
+    width: 100%;
+  }
+
+  .text h4 {
+    font-size: 1rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 1.1rem;
+  }
 }
 
-/* Estilos para pantallas grandes */
+/* Pantallas grandes (1201px en adelante) */
 @media (min-width: 1201px) {
-  .goals {
-    flex-direction: row;
-  }
-
-  .images {
-    flex-direction: row;
-    width: 50%;
-  }
-
-  .rightImages {
-    width: 100%;
-  }
-
-  .leftImage {
-    width: 100%;
-    height: 410px;
-  }
-
-  .text {
-    width: 50%;
-    padding-right: 20px;
+  .rightImages img {
+    height: 255px;
   }
 }

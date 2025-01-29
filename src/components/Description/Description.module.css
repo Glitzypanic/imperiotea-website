@@ -1,11 +1,11 @@
+/* Estilos base para móviles (Mobile First) */
 .description {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   background-color: var(--primary);
   margin-top: 20px;
   border-radius: 10px;
-  height: 400px;
+  height: auto;
 }
 
 .bold {
@@ -13,7 +13,7 @@
 }
 
 .description h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
@@ -21,8 +21,8 @@
 
 .description p {
   font-family: var(--secondary-font);
-  font-size: 1.125rem;
-  width: 750px;
+  font-size: 0.8rem;
+  width: 100%;
 }
 
 .right {
@@ -31,119 +31,78 @@
 }
 
 .right img {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 0 10px 10px;
   width: 100%;
-  max-height: 100%;
+  max-height: none;
   object-fit: cover;
   object-position: center;
   opacity: 0.5;
 }
 
 .left {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
   color: var(--secondary);
   height: 100%;
 }
 
-/* Estilos base para móviles pequeños */
-@media (max-width: 375px) {
-  .description {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
+/* Media query para móviles medianos (a partir de 376px) */
+@media (min-width: 376px) {
   .description h2 {
     font-size: 1.5rem;
   }
 
   .description p {
-    width: 100%;
     font-size: 0.8rem;
   }
 
-  .right img {
-    border-radius: 0 0 10px 10px;
-    width: 100%;
-    max-height: none;
-  }
-
-  .right {
-    height: auto;
-  }
-
   .left {
-    padding: 10px;
+    padding: 20px;
   }
 }
 
-/* Estilos para móviles medianos */
-@media (min-width: 376px) and (max-width: 767px) {
+/* Media query para tabletas (a partir de 768px) */
+@media (min-width: 768px) {
   .description {
-    height: auto;
-    grid-template-columns: 1fr;
-  }
-
-  .description h2 {
-    font-size: 1.7rem;
-  }
-
-  .description p {
-    width: 100%;
-    font-size: 1rem;
-  }
-
-  .right {
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .right img {
-    border-radius: 0 0 10px 10px;
-  }
-}
-
-/* Estilos para tabletas en vertical */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .description {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     height: auto;
   }
 
   .description h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .description p {
-    width: 100%;
-    font-size: 1.05rem;
+    font-size: 1rem;
+  }
+
+  .right img {
+    border-radius: 0 10px 10px 0;
   }
 
   .right {
     height: 100%;
+    margin-top: 0;
   }
 }
 
-/* Estilos para tabletas en horizontal y laptops pequeñas */
-@media (min-width: 1024px) and (max-width: 1200px) {
+/* Media query para laptops pequeñas y tabletas en horizontal (a partir de 1024px) */
+@media (min-width: 1024px) {
   .description h2 {
     font-size: 1.9rem;
   }
 
   .description p {
-    width: 100%;
     font-size: 1.1rem;
-  }
-
-  .right {
-    height: 100%;
   }
 }
 
-/* Estilos para pantallas grandes */
+/* Media query para pantallas grandes (a partir de 1201px) */
 @media (min-width: 1201px) {
   .description {
-    grid-template-columns: repeat(2, 1fr);
     height: 400px;
   }
 
@@ -154,9 +113,5 @@
   .description p {
     width: 750px;
     font-size: 1.125rem;
-  }
-
-  .right {
-    height: 100%;
   }
 }
