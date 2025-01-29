@@ -21,6 +21,13 @@
   color: var(--primary);
 }
 
+.socialLinks {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
 header nav {
   position: fixed;
   top: 0;

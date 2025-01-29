@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
@@ -35,7 +37,7 @@ function Navbar() {
             </li>
             <li>
               <Link to="/news" onClick={closeMenu}>
-                Noticias
+                Blog
               </Link>
             </li>
           </ul>
@@ -78,6 +80,22 @@ function Navbar() {
                     Noticias
                   </Link>
                 </li>
+                <div className={styles.socialLinks}>
+                  <a
+                    href="https://web.facebook.com/imperio.tea.54"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookSquare />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/imperiotea/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FiInstagram />
+                  </a>
+                </div>
               </ul>
               <button
                 className={`${styles.navBtn} ${styles.navCloseBtn}`}

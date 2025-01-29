@@ -6,7 +6,12 @@ function About() {
     <section className={styles.about}>
       <div className={styles.heroContainer}>
         <div className={styles.heroImg}></div>
-        <h1 className={styles.heroTitle}>Sobre Nosotros</h1>
+        <div className={styles.heroOverlay}>
+          <h1 className={styles.heroTitle}>Sobre Nosotros</h1>
+          <p className={styles.heroDescription}>
+            Conoce nuestra historia, nuestro equipo y nuestra visión
+          </p>
+        </div>
       </div>
       <div className={styles.historyContainer}>
         <h2 className={styles.historySubtitle}>Historia</h2>
