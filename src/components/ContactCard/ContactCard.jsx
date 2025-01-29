@@ -1,6 +1,5 @@
 import styles from "./ContactCard.module.css";
 
-// eslint-disable-next-line react/prop-types
 function ContactCard({ img, title, icon: Icon, contactType, description }) {
   return (
     <section className={styles.contact}>

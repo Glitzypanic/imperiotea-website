@@ -1,5 +1,5 @@
 .about {
-  padding-inline: 1rem;
+  padding-inline: 0.5rem;
 }
 
 /* Hero section */
@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+  height: 400px; /* Altura reducida para móviles */
 }
 
 .heroImg {
@@ -17,17 +17,18 @@
   background-size: cover;
   background-position: center;
   border-radius: 0 0 10px 10px;
-  height: 600px;
+  height: 400px; /* Altura reducida para móviles */
   width: 100%;
   filter: brightness(50%);
 }
 
 .heroTitle {
-  font-size: 5rem;
+  font-size: 2.5rem; /* Tamaño reducido para móviles */
   font-weight: bold;
-  padding-inline: 5rem;
+  padding-inline: 1rem; /* Padding reducido para móviles */
   position: absolute;
   color: var(--secondary);
+  text-align: center; /* Centrar texto en móviles */
 }
 
 /* History section */
@@ -39,7 +40,7 @@
 }
 
 .historySubtitle {
-  font-size: 3rem;
+  font-size: 2rem; /* Tamaño reducido para móviles */
   font-weight: bold;
   margin-top: 20px;
   color: var(--primary-dark);
@@ -48,41 +49,39 @@
 
 .sectionTitle {
   font-family: var(--main-font);
-  font-size: 2rem;
+  font-size: 1.5rem; /* Tamaño reducido para móviles */
   color: var(--primary);
   font-weight: 500;
-  margin: 2rem 0 1rem;
+  margin: 1rem 0; /* Margen reducido para móviles */
   width: 100%;
-  max-width: 1000px;
+  text-align: center; /* Centrar texto en móviles */
 }
 
 .sectionText {
   font-family: var(--secondary-font);
-  font-size: 1.1rem;
+  font-size: 1rem; /* Tamaño reducido para móviles */
   line-height: 1.6;
   color: #444;
-  max-width: 1000px;
-  margin: 0 auto 2rem;
-  /* text-align: justify; */
+  margin: 0 auto 1rem; /* Margen reducido para móviles */
+  padding: 0 1rem; /* Padding para móviles */
 }
 
 .sectionList {
-  max-width: 1000px;
-  margin: 1rem auto 2rem;
-  padding-left: 2rem;
+  margin: 1rem auto;
+  padding-left: 1rem; /* Padding reducido para móviles */
 }
 
 .listItem {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Tamaño reducido para móviles */
   margin-bottom: 1rem;
-  /* line-height: 1.5; */
   color: #555;
 }
 
 .historyText {
   margin-top: 10px;
-  font-size: 1.4rem;
-  width: 1400px;
+  font-size: 1.2rem; /* Tamaño reducido para móviles */
+  width: 100%; /* Ancho completo para móviles */
+  padding: 0 1rem; /* Padding para móviles */
 }
 
 /* Person card section */
@@ -95,7 +94,7 @@
 }
 
 .personTitle {
-  font-size: 3rem;
+  font-size: 2rem; /* Tamaño reducido para móviles */
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -103,8 +102,8 @@
 
 .personCardContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: 1fr; /* Una columna para móviles */
+  gap: 1rem; /* Espacio reducido para móviles */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -114,29 +113,99 @@ strong {
   font-weight: 700;
 }
 
-/* Estilos base para móviles pequeños */
-@media (max-width: 375px) {
+/* Media query para móviles medianos (a partir de 376px) */
+@media (min-width: 376px) {
+  .heroTitle {
+    font-size: 3rem;
+    padding-inline: 2rem;
+  }
+
+  .historySubtitle {
+    font-size: 2.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .sectionText {
+    font-size: 1.1rem;
+  }
+
+  .historyText {
+    font-size: 1.3rem;
+  }
+
+  .personTitle {
+    font-size: 2.5rem;
+  }
+}
+
+/* Media query para tabletas (a partir de 768px) */
+@media (min-width: 768px) {
+  .heroContainer {
+    height: 500px;
+  }
+
+  .heroImg {
+    height: 500px;
+  }
+
+  .heroTitle {
+    font-size: 4rem;
+    padding-inline: 3rem;
+  }
+
+  .historySubtitle {
+    font-size: 3rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .sectionText {
+    font-size: 1.2rem;
+  }
+
+  .historyText {
+    font-size: 1.4rem;
+  }
+
   .personCardContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para tabletas */
+    gap: 1.5rem;
+  }
+
+  .personTitle {
+    font-size: 3rem;
+  }
+}
+
+/* Media query para laptops y pantallas grandes (a partir de 1024px) */
+@media (min-width: 1024px) {
+  .about {
+    padding-inline: 2rem;
   }
 
   .heroContainer {
-    width: 100%;
+    height: 600px;
   }
-}
 
-/* Estilos para móviles medianos */
-@media (min-width: 376px) and (max-width: 767px) {
-}
+  .heroImg {
+    height: 600px;
+  }
 
-/* Estilos para tabletas en vertical */
-@media (min-width: 768px) and (max-width: 1023px) {
-}
+  .heroTitle {
+    font-size: 5rem;
+    padding-inline: 5rem;
+  }
 
-/* Estilos para tabletas en horizontal y laptops pequeñas */
-@media (min-width: 1024px) and (max-width: 1200px) {
-}
-
-/* Estilos para pantallas grandes */
-@media (min-width: 1201px) {
+  .personCardContainer {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Tres columnas para pantallas grandes */
+    gap: 2rem;
+  }
 }

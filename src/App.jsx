@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import styles from "./App.module.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout.jsx";

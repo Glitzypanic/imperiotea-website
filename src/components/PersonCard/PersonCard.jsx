@@ -42,7 +42,7 @@ function PersonCard({ name, profession, img, description }) {
                   <h3 className={styles.qualificationsTitle}>
                     Formación académica
                   </h3>
-                  <ul>
+                  <ul className={styles.qualificationsList}>
                     {description.split("\n").map((item, index) => (
                       <li key={index} className={styles.qualificationItem}>
                         {item.trim()}

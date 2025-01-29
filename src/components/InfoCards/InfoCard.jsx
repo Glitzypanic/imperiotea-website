@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "./InfoCard.module.css";
 
 const InfoCard = ({ title, image, children }) => {

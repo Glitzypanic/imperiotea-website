@@ -1,30 +1,32 @@
+/* Estilos base para móviles pequeños (Mobile First) */
 .personCard {
   background-color: var(--secondary);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  width: 300px;
-  height: 480px;
+  width: 100%; /* Ajustado para ocupar el 100% del contenedor en móviles */
+  max-width: 300px; /* Mantenemos el máximo */
+  height: auto; /* Ajustamos la altura para que sea automática */
+  margin: 0 auto; /* Centramos en dispositivos pequeños */
 }
 
 .personCard img {
   width: 100%;
-  height: 340px;
+  height: 400px;
   object-fit: cover;
   object-position: center;
 }
 
 .text {
-  height: 70px;
+  height: auto; /* Ajustamos la altura */
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid var(--primary); */
   padding: 10px;
-  width: 300px;
-  height: 140px;
+  width: 100%; /* Ajustado para ocupar el 100% del contenedor en móviles */
+  height: auto; /* Ajustamos la altura */
   border-radius: 0 0 10px 10px;
 }
 
@@ -50,14 +52,10 @@
 .profession {
   font-size: 1rem;
   font-weight: bolder;
-  width: 290px;
+  width: 100%; /* Ajustado para ocupar el 100% del contenedor */
   color: gray;
   margin-bottom: 1rem;
 }
-
-/* .description {
-  width: 300px;
-} */
 
 /* Estilos para la modal */
 .modalOverlay {
@@ -71,44 +69,51 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 20px; /* Añadimos padding para evitar que la modal toque los bordes en móviles */
 }
 
 .modalContent {
   display: flex;
+  flex-direction: column; /* Cambiamos a columna para móviles */
   align-items: center;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  width: 1000px;
+  width: 100%; /* Ajustado para ocupar el 100% del contenedor en móviles */
+  max-width: 1000px; /* Mantenemos el máximo */
   position: relative;
 }
 
 .modalContent img {
-  height: 500px;
-  width: 400px;
+  display: none;
+  /* height: 250px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 400px;
+    */
 }
 
 .modalResume {
-  width: 100%;
+  width: 100%; /* Ajustado para ocupar el 100% del contenedor en móviles */
   padding: 20px;
   color: #333;
 }
 
 .modalResume h2 {
-  font-size: 2.4rem;
+  font-size: 1.5rem; /* Reducimos el tamaño para móviles */
   color: var(--primary-dark);
 }
 
 .modalResume span {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1rem; /* Reducimos el tamaño para móviles */
   color: var(--primary);
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .qualificationsTitle {
-  font-size: 1.6rem;
+  font-size: 1.2rem; /* Reducimos el tamaño para móviles */
   color: var(--primary-dark);
   border-bottom: 2px solid var(--secondary);
   padding-bottom: 0.5rem;
@@ -117,7 +122,7 @@
 
 .qualificationItem {
   font-family: var(--secondary-font);
-  font-size: 1.1rem;
+  font-size: 1rem; /* Reducimos el tamaño para móviles */
   margin: 0.8rem 0;
   padding-left: 1.5rem;
   position: relative;
@@ -131,9 +136,86 @@
   font-weight: bold;
 }
 
+.qualificationsList {
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
 .closeButton {
   margin-top: 2.5rem;
   padding: 12px 25px;
-  font-size: 1.1rem;
-  width: 100%;
+  font-size: 1rem; /* Reducimos el tamaño para móviles */
+  width: 100%; /* Ajustado para ocupar el 100% del contenedor en móviles */
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) {
+  .personCard {
+    max-width: 400px; /* Aumentamos el máximo para tablets */
+  }
+
+  .modalContent {
+    flex-direction: row; /* Volvemos a la disposición en fila */
+  }
+
+  .modalContent img {
+    display: block; /* Mostramos la imagen */
+    width: 50%; /* Ajustamos el ancho */
+    max-width: 400px; /* Mantenemos el máximo */
+  }
+
+  .modalResume {
+    width: 60%; /* Ajustamos el ancho */
+  }
+
+  .modalResume h2 {
+    font-size: 2rem; /* Aumentamos el tamaño para tablets */
+  }
+
+  .modalResume span {
+    font-size: 1.2rem; /* Aumentamos el tamaño para tablets */
+  }
+
+  .qualificationsTitle {
+    font-size: 1.4rem; /* Aumentamos el tamaño para tablets */
+  }
+
+  .qualificationItem {
+    font-size: 1.1rem; /* Aumentamos el tamaño para tablets */
+  }
+
+  .closeButton {
+    font-size: 1.1rem; /* Aumentamos el tamaño para tablets */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  .personCard {
+    max-width: 300px; /* Volvemos al máximo original para pantallas grandes */
+  }
+
+  .modalContent {
+    width: 90%; /* Ajustamos para que no ocupe el 100% de la pantalla */
+  }
+
+  .modalResume h2 {
+    font-size: 2.4rem; /* Restauramos el tamaño original */
+  }
+
+  .modalResume span {
+    font-size: 1.3rem; /* Restauramos el tamaño original */
+  }
+
+  .qualificationsTitle {
+    font-size: 1.6rem; /* Restauramos el tamaño original */
+  }
+
+  .qualificationItem {
+    font-size: 1.1rem; /* Mantenemos el tamaño ajustado */
+  }
+
+  .closeButton {
+    font-size: 1.1rem; /* Mantenemos el tamaño ajustado */
+  }
 }

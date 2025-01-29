@@ -1,6 +1,5 @@
 import styles from "./NewsCard.module.css";
 
-// eslint-disable-next-line react/prop-types
 function NewsCard({ type, title, date, description, link, image }) {
   return (
     <div id="newsCard" className={styles.card}>
