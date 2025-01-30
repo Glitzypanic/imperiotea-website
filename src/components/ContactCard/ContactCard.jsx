@@ -7,7 +7,7 @@ function ContactCard({ img, title, icon: Icon, contactType, description }) {
       window.open("https://wa.me/+56967045875", "_blank");
     } else {
       // Email link
-      window.open("mailto:Imperioteaoficial@gmail.com");
+      window.open("mailto:Imperioteaoficial@gmail.com", "_self");
     }
   };
 
