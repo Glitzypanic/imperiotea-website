@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout.jsx";
 import HomePage from "./pages/homePage/Home.jsx";
 import AboutPage from "./pages/aboutPage/About.jsx";
 import NewsPage from "./pages/newsPage/News.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // import ResourcesPage from "./pages/resourcesPage/Resources";
 // import ContactPage from "./pages/contactPage/Contact";
 import Error404Page from "./pages/errorPage/Error404.jsx";
@@ -20,6 +21,7 @@ function App() {
         {/* <Route path="/contact" Component={ContactPage} /> */}
         <Route path="*" Component={Error404Page} />
       </Routes>
+      <SpeedInsights />
     </Layout>
   );
 }
