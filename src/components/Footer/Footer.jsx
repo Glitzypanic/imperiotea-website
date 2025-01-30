@@ -67,7 +67,7 @@ function Footer() {
     <footer className={styles.footer}>
       <Link to="/" onClick={scrollToTop}>
         <img
-          src="/logo-imperio1.png"
+          src="/logo-imperio-1.png"
           alt="Logo Imperio Tea"
           className={styles.logo}
         />

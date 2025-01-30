@@ -4,14 +4,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: url("/backgrounds/wavesNegative.svg") center, var(--quinary); */
+  background: url("/backgrounds/dalmatian-spots.svg");
+  background-size: cover;
+  background-clip: padding-box;
   color: var(--tertiary);
   background-color: var(--secondary);
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  border-radius: 10px;
+  padding-top: 10px;
+  border-radius: 20px;
   height: 150px;
 }
 
@@ -160,10 +163,6 @@
     padding-inline: 40px;
   }
 
-  .logo {
-    height: 250px;
-  }
-
   .sectionTitle,
   .socialTitle,
   .addressTitle {
@@ -197,7 +196,7 @@
 
   .logo {
     height: 200px;
-    width: 200px;
+    margin-inline: 10px;
   }
 
   .bottom {
@@ -232,11 +231,6 @@
 
 /* Pantallas grandes (1201px en adelante) */
 @media (min-width: 1201px) {
-  .logo {
-    height: 300px;
-    width: 300px;
-  }
-
   .sectionTitle,
   .socialTitle,
   .addressTitle {
