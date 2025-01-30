@@ -4,25 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  font-size: 0.8rem;
-  background: url("/backgrounds/wavesNegative.svg") center, var(--quinary);
+  /* background: url("/backgrounds/wavesNegative.svg") center, var(--quinary); */
   color: var(--tertiary);
+  background-color: var(--secondary);
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-  padding-inline: 20px;
-  margin-top: auto;
 }
 
 .logo {
   border-radius: 10px;
   height: 150px;
-  order: -1;
 }
 
 .bottom {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
   width: 100%;
 }
 
@@ -30,7 +26,20 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.socialItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .sectionTitle,
@@ -38,7 +47,6 @@
 .addressTitle {
   font-weight: bold;
   font-size: 1rem;
-  margin-bottom: 5px;
 }
 
 .interactiveList,
@@ -48,18 +56,21 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  width: fit-content;
 }
 
 .addressList {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 
 .interactiveList,
 .contactList {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
@@ -93,6 +104,7 @@
 
 .socialList {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -101,7 +113,9 @@
 .addressContainer {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  width: fit-content;
+  cursor: none;
 }
 
 .mapButton {
@@ -175,42 +189,52 @@
 /* Laptops pequeñas (1024px en adelante) */
 @media (min-width: 1024px) {
   .footer {
+    border: 1px solid var(--tertiary);
+    padding: 20px 0;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-inline: 50px;
-    padding-top: 20px;
+    justify-content: center;
   }
 
   .logo {
-    height: 300px;
-    margin-bottom: 0;
-    margin-right: 20px;
-    flex: 0 0 auto;
+    height: 200px;
+    width: 200px;
   }
 
   .bottom {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    max-width: 1750px;
+  }
+
+  .sections {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
   }
 
   .sectionContainer {
-    flex: 1;
-    max-width: 250px; /* Aumenta el max-width si es necesario */
-    overflow: visible; /* Asegura que no se corte el contenido */
+    margin-bottom: 0;
+    height: 100%;
+  }
+
+  .interactiveList,
+  .contactList,
+  .addressList,
+  .socialList {
+    align-items: flex-start;
+    height: 100%;
   }
 }
 
 /* Pantallas grandes (1201px en adelante) */
 @media (min-width: 1201px) {
-  .footer {
-    padding-inline: 100px;
-  }
-
   .logo {
-    height: 350px;
+    height: 300px;
+    width: 300px;
   }
 
   .sectionTitle,

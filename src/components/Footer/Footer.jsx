@@ -26,7 +26,15 @@ function Footer() {
     },
     {
       icon: <MdOutlineMail className={styles.contactIcon} />,
-      text: "contacto@imperiotea.com",
+      text: "Presidente.Imperiotea@gmail.com",
+    },
+    {
+      icon: <MdOutlineMail className={styles.contactIcon} />,
+      text: "Secretaria.Imperiotea@gmail.com",
+    },
+    {
+      icon: <MdOutlineMail className={styles.contactIcon} />,
+      text: "Tesorera.Imperiotea@gmail.com",
     },
   ];
 
@@ -66,8 +74,8 @@ function Footer() {
       </Link>
 
       <div className={styles.bottom}>
-        <div>
-          <Section title="Enlaces">
+        <div className={styles.sections}>
+          <Section title="Enlaces" className={styles.linksSection}>
             <ul className={styles.interactiveList}>
               {["/", "/about", "/news", "/contact"].map((path, index) => (
                 <li key={index} className={styles.interactiveItem}>
@@ -85,7 +93,7 @@ function Footer() {
             </ul>
           </Section>
 
-          <Section title="Contacto">
+          <Section title="Contacto" className={styles.contactSection}>
             <ul className={styles.contactList}>
               {contactItems.map((item, index) => (
                 <li key={index} className={styles.contactItems}>
@@ -97,8 +105,12 @@ function Footer() {
           </Section>
         </div>
 
-        <div>
-          <Section title="Redes sociales" isSocial>
+        <div className={styles.sections}>
+          <Section
+            title="Redes sociales"
+            isSocial
+            className={styles.socialSection}
+          >
             <ul className={styles.socialList}>
               {socialLinks.map((link, index) => (
                 <li key={index} className={styles.socialItem}>
@@ -110,7 +122,7 @@ function Footer() {
             </ul>
           </Section>
 
-          <Section title="Dirección">
+          <Section title="Dirección" className={styles.addressSection}>
             <ul className={styles.addressList}>
               <li className={styles.addressContainer}>
                 <SiGooglemaps className={styles.addressIcon} />
