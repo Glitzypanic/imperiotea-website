@@ -22,19 +22,23 @@ function Footer() {
   const contactItems = [
     {
       icon: <FaWhatsapp className={styles.contactIcon} />,
-      text: "+56967045875",
+      text: "+569 67045875",
+      url: "https://wa.me/56967045875",
     },
     {
       icon: <MdOutlineMail className={styles.contactIcon} />,
       text: "Presidente.Imperiotea@gmail.com",
+      url: "mailto:Presidente.Imperiotea@gmail.com",
     },
     {
       icon: <MdOutlineMail className={styles.contactIcon} />,
       text: "Secretaria.Imperiotea@gmail.com",
+      url: "mailto:Secretaria.Imperiotea@gmail.com",
     },
     {
       icon: <MdOutlineMail className={styles.contactIcon} />,
       text: "Tesorera.Imperiotea@gmail.com",
+      url: "mailto:Tesorera.Imperiotea@gmail.com",
     },
   ];
 
