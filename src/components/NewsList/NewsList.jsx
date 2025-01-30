@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./NewsList.module.css";
 import NewsCard from "../NewsCard/NewsCard";
 import Pagination from "../Pagination/Pagination";
@@ -16,6 +16,10 @@ export default function NewsList() {
   const indexOfLastNews = currentPage * newsPerPage;
   const indexOfFirstNews = indexOfLastNews - newsPerPage;
   const currentNews = reversedNewsData.slice(indexOfFirstNews, indexOfLastNews);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   return (
     <div className={styles.container}>
