@@ -15,6 +15,10 @@ function Footer() {
     window.open(googleMapsUrl, "_blank");
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const contactItems = [
     {
       icon: <FaWhatsapp className={styles.contactIcon} />,
@@ -53,7 +57,7 @@ function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <Link to="/">
+      <Link to="/" onClick={scrollToTop}>
         <img
           src="/logo-imperio1.png"
           alt="Logo Imperio Tea"
@@ -67,7 +71,7 @@ function Footer() {
             <ul className={styles.interactiveList}>
               {["/", "/about", "/news", "/contact"].map((path, index) => (
                 <li key={index} className={styles.interactiveItem}>
-                  <Link to={path}>
+                  <Link to={path} onClick={scrollToTop}>
                     {
                       {
                         "/": "Inicio",
