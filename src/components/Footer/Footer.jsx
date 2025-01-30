@@ -22,7 +22,7 @@ function Footer() {
   const contactItems = [
     {
       icon: <FaWhatsapp className={styles.contactIcon} />,
-      text: "+569 24934020",
+      text: "+56967045875",
     },
     {
       icon: <MdOutlineMail className={styles.contactIcon} />,
