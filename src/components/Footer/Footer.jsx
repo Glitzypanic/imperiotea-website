@@ -100,9 +100,15 @@ function Footer() {
           <Section title="Contacto" className={styles.contactSection}>
             <ul className={styles.contactList}>
               {contactItems.map((item, index) => (
-                <li key={index} className={styles.contactItems}>
-                  {item.icon}
-                  {item.text}
+                <li key={index}>
+                  <a
+                    href={item.url}
+                    rel="noopener noreferrer"
+                    className={styles.contactItems}
+                  >
+                    {item.icon}
+                    {item.text}
+                  </a>
                 </li>
               ))}
             </ul>
