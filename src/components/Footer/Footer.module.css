@@ -13,9 +13,9 @@
 }
 
 .logo {
-  padding-top: 10px;
   border-radius: 20px;
   height: 150px;
+  margin-top: 10px;
 }
 
 .bottom {
@@ -195,8 +195,9 @@
   }
 
   .logo {
-    height: 200px;
     margin-inline: 10px;
+    height: 150px;
+    border-radius: 20px;
   }
 
   .bottom {
@@ -231,6 +232,10 @@
 
 /* Pantallas grandes (1201px en adelante) */
 @media (min-width: 1201px) {
+  .logo {
+    height: 200px;
+  }
+
   .sectionTitle,
   .socialTitle,
   .addressTitle {
