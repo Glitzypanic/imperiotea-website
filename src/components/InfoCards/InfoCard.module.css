@@ -6,7 +6,8 @@
 }
 
 .imageContainer {
-  justify-self: center;
+  display: flex;
+  justify-content: center !important;
 }
 
 .infoCard h3 {
