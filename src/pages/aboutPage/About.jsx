@@ -149,6 +149,19 @@ function About() {
               "Atención temprana a niños(as) que presenten alguna NEE desde los 2 años\n"
             }
           />
+          <PersonCard
+            name="Javiera Villarroel López"
+            profession="Terapeuta Ocupacional"
+            img="\images\people\javiera.webp"
+            description={
+              "Licensiada en Ocupación Humana\n" +
+              "Certificada en:\n" +
+              "Transtornos del Neurodesarrollo\n" +
+              "Salud mental Infanto-Juvenil\n" +
+              "Transtorno del espectro autista\n" +
+              "Estrategias de integración sensorial\n"
+            }
+          />
         </div>
       </div>
     </section>
