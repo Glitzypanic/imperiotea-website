@@ -1,5 +1,7 @@
 # Imperio TEA Website
 
+![726shots_so](https://github.com/user-attachments/assets/355e793d-1124-4081-b4b1-cb322cbbdedf)
+
 ## Description
 
 Official website for the Imperio TEA Corporation, a non-profit organization dedicated to supporting individuals with Autism Spectrum Disorder (ASD). The site is built with React and Vite to provide a modern and accessible experience.
