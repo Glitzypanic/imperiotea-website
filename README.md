@@ -1,8 +1,94 @@
-# React + Vite
+# Imperio TEA Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Official website for the Imperio TEA Corporation, a non-profit organization dedicated to supporting individuals with Autism Spectrum Disorder (ASD). The site is built with React and Vite to provide a modern and accessible experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+- Step 1: Install dependencies
+
+```sh
+pnpm install
+```
+
+- Step 2: Clone the repository
+
+```sh
+git clone [repository URL]
+cd imperiotea-website
+```
+
+## Usage
+
+- Start in development mode:
+
+```sh
+pnpm dev
+```
+
+- Build for production:
+
+```sh
+pnpm build
+```
+
+- Preview the production build:
+
+```sh
+pnpm preview
+```
+
+- Run the linter:
+
+```sh
+pnpm lint
+```
+
+## Features
+
+- Responsive, mobile-first design
+- Dynamic routes using React Router
+- Informative sections about the organization and its services
+- News and activities gallery
+- Detailed information about the professional team
+- Social media integration
+- SEO optimization
+
+## Project Structure
+
+```
+src/
+├── components/         # Reusable React components
+├── pages/              # Main pages
+├── data/               # JSON data files
+└── App.jsx             # Main component
+```
+
+## Technologies
+
+- React 18.3
+- Vite 6.0
+- React Router DOM
+- CSS Modules
+- ESLint
+- React Icons
+
+## Available Scripts
+
+- `dev`: Starts the development server
+- `build`: Builds the application for production
+- `preview`: Previews the production build
+- `lint`: Runs the linter
+
+## Contribution
+
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b feature/NewFeature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/NewFeature`)
+5. Create a Pull Request
+
+## Developer Contact
+
+- Email: jose.fariasdv@gmail.com
