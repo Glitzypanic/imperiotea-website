@@ -1,6 +1,6 @@
 import styles from "./PersonCard.module.css";
 import { useState } from "react";
-function PersonCard({ name, profession, img, description }) {
+function PersonCard({ name, profession, img, description, datos }) {
   // Estado para controlar la visibilidad de la modal
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,9 +39,7 @@ function PersonCard({ name, profession, img, description }) {
               {/* Reemplazar el párrafo simple por lista estructurada */}
               {description && (
                 <div className={styles.qualifications}>
-                  <h3 className={styles.qualificationsTitle}>
-                    Formación académica
-                  </h3>
+                  <h3 className={styles.qualificationsTitle}>{datos}</h3>
                   <ul className={styles.qualificationsList}>
                     {description.split("\n").map((item, index) => (
                       <li key={index} className={styles.qualificationItem}>

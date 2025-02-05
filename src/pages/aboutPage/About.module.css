@@ -106,7 +106,20 @@
   font-size: 2rem; /* Tamaño reducido para móviles */
   font-weight: bold;
   text-align: center;
+}
+
+.proSubtitle {
+  font-size: 1.8rem; /* Tamaño reducido para móviles */
+  font-weight: bold;
   margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.directiveSubtitle {
+  font-size: 1.8rem; /* Tamaño reducido para móviles */
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .personCardContainer {
@@ -164,6 +177,14 @@ strong {
   .personTitle {
     font-size: 3rem;
   }
+
+  .proSubtitle {
+    font-size: 2rem;
+  }
+
+  .directiveSubtitle {
+    font-size: 2rem;
+  }
 }
 
 /* Media query para laptops y pantallas grandes (a partir de 1024px) */
@@ -204,10 +225,6 @@ strong {
 
 /* Media query para pantallas extra grandes (a partir de 1200px) */
 @media (min-width: 1200px) {
-  .about {
-    padding-inline: 3rem;
-  }
-
   .heroContainer {
     height: 600px;
   }
@@ -230,5 +247,13 @@ strong {
 
   .personTitle {
     font-size: 4rem;
+  }
+
+  .proSubtitle {
+    font-size: 2.5rem;
+  }
+
+  .directiveSubtitle {
+    font-size: 2.5rem;
   }
 }

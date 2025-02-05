@@ -85,8 +85,10 @@ function About() {
       </div>
       <div className={styles.PersonContainer}>
         <h2 className={styles.personTitle}>Nuestro Equipo</h2>
+        <h3 className={styles.proSubtitle}>Profesionales</h3>
         <div className={styles.personCardContainer}>
           <PersonCard
+            datos="Formación académica"
             name="Cecilia Díaz Guajardo"
             profession="Terapeuta Ocupacional especializada en infancia"
             img="/images/people/ceci.webp"
@@ -100,6 +102,7 @@ function About() {
             }
           />
           <PersonCard
+            datos="Formación académica"
             name="John Iglesias Pérez"
             profession="Fonoaudiólogo"
             img="\images\people\john.webp"
@@ -114,6 +117,7 @@ function About() {
             }
           />
           <PersonCard
+            datos="Formación académica"
             name="Macarena Escobar Coccio"
             profession="Fonoaudióloga"
             img="\images\people\macarena.webp"
@@ -127,6 +131,7 @@ function About() {
             }
           />
           <PersonCard
+            datos="Formación académica"
             name="Ornella Maldonado"
             profession="Psicóloga Clínica"
             img="\images\people\ornella.webp"
@@ -137,6 +142,7 @@ function About() {
             }
           />
           <PersonCard
+            datos="Formación académica"
             name="Maricela González"
             profession="Educadora Diferencial"
             img="\images\people\maricela.webp"
@@ -150,6 +156,7 @@ function About() {
             }
           />
           <PersonCard
+            datos="Formación académica"
             name="Javiera Villarroel López"
             profession="Terapeuta Ocupacional"
             img="\images\people\javiera.webp"
@@ -160,6 +167,18 @@ function About() {
               "Salud mental Infanto-Juvenil\n" +
               "Transtorno del espectro autista\n" +
               "Estrategias de integración sensorial\n"
+            }
+          />
+        </div>
+        <h3 className={styles.directiveSubtitle}>Directiva</h3>
+        <div className={styles.personCardContainer}>
+          <PersonCard
+            datos="Información de contacto"
+            name="Cesar Antonio Espinoza Gonzalez"
+            profession="Presidente"
+            img="\images\people\cesar.webp"
+            description={
+              "+569 67045875\n" + "Presidente.Imperiotea@gmail.com\n"
             }
           />
         </div>
