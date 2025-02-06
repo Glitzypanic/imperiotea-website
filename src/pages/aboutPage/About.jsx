@@ -161,7 +161,7 @@ function About() {
             profession="Terapeuta Ocupacional"
             img="\images\people\javiera.webp"
             description={
-              "Licensiada en Ocupación Humana\n" +
+              "Licenciada en Ocupación Humana\n" +
               "Certificada en:\n" +
               "Transtornos del Neurodesarrollo\n" +
               "Salud mental Infanto-Juvenil\n" +
