@@ -1,6 +1,13 @@
 import styles from "./ContactCard.module.css";
 
-function ContactCard({ img, title, icon: Icon, contactType, description }) {
+function ContactCard({
+  img,
+  alt,
+  title,
+  icon: Icon,
+  contactType,
+  description,
+}) {
   const handleClick = () => {
     if (contactType === "whatsapp") {
       // WhatsApp link with phone number
@@ -13,7 +20,7 @@ function ContactCard({ img, title, icon: Icon, contactType, description }) {
 
   return (
     <section className={styles.contact}>
-      <img src={img} className={styles.illustration} alt="" />
+      <img src={img} className={styles.illustration} alt={alt} />
       <div className={styles.contactInfo}>
         <div>
           <h2 className={styles.title}>{title}</h2>

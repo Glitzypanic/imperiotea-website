@@ -32,7 +32,7 @@ function Home() {
         <InfoCard
           title="Misión"
           image={misionIcon}
-          alt="Ilustracion de una mision"
+          alt="Ilustración de dos personas uniendo piezas de un rompecabezas, simbolizando la misión de una corporación social sin fines de lucro"
         >
           <p>
             Somos una corporación social sin fines de lucro, dedicada a apoyar y
@@ -62,7 +62,7 @@ function Home() {
         <InfoCard
           title="Visión"
           image={visionIcon}
-          alt="Ilustracion de una vision"
+          alt="Ilustración de varias manos levantadas con diferentes colores de piel y ropa, representando diversidad y visión"
         >
           <p>
             Ser una corporación reconocida por el impacto positivo de nuestras
@@ -87,7 +87,7 @@ function Home() {
         <InfoCard
           title="Valores"
           image={valoresIcon}
-          alt="Ilustracion de valores"
+          alt="Ilustración de una persona con una bombilla sobre la cabeza, representando los valores de una organización sin fines de lucro"
         >
           <p>
             Como agrupación sin fin de lucro nos comprometemos a entregar,
@@ -114,6 +114,7 @@ function Home() {
       <div className={styles.contactContainer}>
         <ContactCard
           img={questionIcon}
+          alt="Ilustración de una persona pensando con un signo de interrogación sobre su cabeza, acompañada del texto ¿Tienes alguna pregunta?"
           title="¿Tienes alguna pregunta?"
           icon={FaWhatsapp}
           contactType="whatsapp"
@@ -122,6 +123,7 @@ En Imperio TEA, entendemos que a veces necesitas hablar con alguien de inmediato
         />
         <ContactCard
           img={messageIcon}
+          alt="Ilustración de una persona sosteniendo un sobre grande con documentos, acompañada del texto ¿Quieres enviarnos un email?"
           title="¿Quieres enviarnos un email?"
           icon={MdOutlineMail}
           contactType="email"
@@ -141,6 +143,7 @@ En Imperio TEA, valoramos cada voz y experiencia. Si deseas enviarnos una histor
             date={news.date}
             description={news.description}
             image={news.image}
+            alt={news.alt}
             link={news.link}
           />
         </div>

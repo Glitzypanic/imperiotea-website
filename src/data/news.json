@@ -6,7 +6,8 @@
     "date": "2024-06-10",
     "type": "Actividad",
     "image": "/images/activities/dia-niño/Dia-niño3.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Dos personas disfrazadas de Minnie y Mickey Mouse junto a un banner de 'Imperio TEA' que promueve apoyo para niños y jóvenes con trastorno del espectro autista y sus familias, con información de contacto y una imagen de manos pintadas."
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "date": "2024-06-10",
     "type": "Actividad",
     "image": "/images/activities/fiestas-patrias/fiestas-patrias4.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Dos personas celebrando Fiestas Patrias frente a una mesa decorada con un mantel rojo y blanco, con banderas chilenas y elementos de asado. Una persona lleva un delantal con la bandera de Chile y la otra lleva un vestido tradicional chileno de color rosa con blanco."
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "date": "2024-06-10",
     "type": "Taller",
     "image": "/images/activities/taller-equinoterapia/taller-equino4.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Un niño montando a caballo durante una sesión de equinoterapia, con un casco de seguridad y una manta sobre el caballo."
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "date": "2024-06-10",
     "type": "Actividad",
     "image": "/images/activities/Dia-mundial-autismo/dia-autismo4.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Un stand decorado con globos y banderines para el Día Mundial del Autismo, con un banner de 'Imperio TEA' que muestra figuras de niños hechos con piezas de rompecabezas y el texto 'Apoyamos a niños, niñas y jóvenes diagnosticados con trastorno del espectro autista y a sus familias', y una mesa con materiales informativos."
   },
   {
     "id": 5,

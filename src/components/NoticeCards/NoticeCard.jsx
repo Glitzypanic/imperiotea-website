@@ -39,6 +39,7 @@ export default function NewsList() {
             description={news.description}
             link={news.link}
             image={news.image}
+            alt={news.alt}
           />
         ))}
       </div>
