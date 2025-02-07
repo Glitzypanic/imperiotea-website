@@ -33,7 +33,7 @@
   font-weight: 500;
 }
 
-.hero button {
+/* .hero button {
   padding: 10px 20px;
   background-color: var(--primary);
   color: var(--secondary);
@@ -47,7 +47,7 @@
 .hero button:hover {
   background-color: var(--hover);
   color: var(--secondary);
-}
+} */
 
 /* Estilos base para móviles pequeños */
 @media (max-width: 375px) {
@@ -61,16 +61,16 @@
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
-  .hero button {
+  /* .hero button {
     font-size: 1rem;
-  }
+  } */
 }
 
 /* Estilos para móviles medianos */
@@ -88,7 +88,7 @@
   }
 
   .description {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
 
   .hero button {
@@ -143,12 +143,12 @@
   .heroText {
     padding-inline: 5rem;
   }
-
+  /* 
   .title {
     font-size: 4rem;
   }
 
   .description {
     font-size: 2.5rem;
-  }
+  } */
 }

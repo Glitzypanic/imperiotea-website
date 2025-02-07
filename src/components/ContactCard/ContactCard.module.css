@@ -20,13 +20,14 @@
 
 .title {
   font-family: var(--main-font);
-  font-size: 2rem;
+  font-size: 1.563rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .description {
   font-family: var(--secondary-font);
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   margin-top: 10px;
 }
 
@@ -38,6 +39,7 @@
   border: none;
   font-weight: 500;
   border-radius: 5px;
+  font-size: 1.125rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -62,36 +64,36 @@
 
 /* Estilos base para móviles pequeños */
 @media (max-width: 375px) {
-  .title {
+  /* .title {
     font-size: 1.5rem;
   }
 
   .description {
     font-size: 0.8rem;
-  }
+  } */
 
   .button {
     display: flex;
     justify-content: center;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     width: 100%;
   }
 }
 
 /* Estilos para móviles medianos */
 @media (min-width: 376px) and (max-width: 767px) {
-  .title {
+  /* .title {
     font-size: 1.5rem;
   }
 
   .description {
     font-size: 0.8rem;
-  }
+  } */
 
   .button {
     display: flex;
     justify-content: center;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     width: 100%;
   }
 }
@@ -108,18 +110,18 @@
     margin-left: 20px;
   }
 
-  .title {
+  /* .title {
     font-size: 2rem;
   }
 
   .description {
     font-size: 1rem;
-  }
+  } */
 
   .button {
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     width: 100%;
   }
 }

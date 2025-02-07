@@ -14,21 +14,21 @@
 
 .text h4 {
   font-family: var(--main-font);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--primary);
 }
 
 .text h2 {
   font-family: var(--main-font);
-  font-size: 1.5rem;
+  font-size: 1.563rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .text p {
   font-family: var(--secondary-font);
-  font-size: 0.8rem;
+  font-size: 1.125rem;
 }
 
 .text button {
@@ -75,7 +75,7 @@
 
 /* Móviles medianos (376px en adelante) */
 @media (min-width: 376px) {
-  .text h4 {
+  /* .text h4 {
     font-size: 0.8rem;
   }
 
@@ -85,7 +85,7 @@
 
   .text p {
     font-size: 0.8rem;
-  }
+  } */
 
   .text button {
     width: auto;
@@ -94,7 +94,7 @@
 
 /* Tabletas (768px en adelante) */
 @media (min-width: 768px) {
-  .text h4 {
+  /* .text h4 {
     font-size: 1rem;
   }
 
@@ -104,7 +104,7 @@
 
   .text p {
     font-size: 1rem;
-  }
+  } */
 
   .images {
     flex-direction: row;
@@ -157,7 +157,7 @@
     width: 100%;
   }
 
-  .text h4 {
+  /* .text h4 {
     font-size: 1rem;
   }
 
@@ -167,7 +167,7 @@
 
   .text p {
     font-size: 1.1rem;
-  }
+  } */
 }
 
 /* Pantallas grandes (1201px en adelante) */

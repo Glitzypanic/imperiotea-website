@@ -31,12 +31,12 @@
 }
 
 .heroTitle {
-  font-size: 1.5rem; /* Tamaño reducido para móviles */
+  font-size: 1.8rem; /* Tamaño reducido para móviles */
   font-weight: bold;
 }
 
 .heroDescription {
-  font-size: 1rem; /* Tamaño reducido para móviles */
+  font-size: 1.25rem; /* Tamaño reducido para móviles */
   font-weight: 500;
 }
 
@@ -146,11 +146,11 @@ strong {
   }
 
   .heroTitle {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
   .heroDescription {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .historySubtitle {
@@ -207,11 +207,11 @@ strong {
   }
 
   .heroTitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .heroDescription {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
   }
 
   .personCardContainer {
@@ -234,11 +234,11 @@ strong {
   }
 
   .heroTitle {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .heroDescription {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .personCardContainer {
