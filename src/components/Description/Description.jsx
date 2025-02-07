@@ -22,7 +22,10 @@ function Description() {
         </p>
       </div>
       <div className={styles.right}>
-        <img src={Image5} alt="Descripción" />
+        <img
+          src={Image5}
+          alt="Un niño escribiendo en un cuaderno en un entorno escolar."
+        />
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import styles from "./PersonCard.module.css";
 import { useState } from "react";
-function PersonCard({ name, profession, img, description, datos }) {
+function PersonCard({ name, profession, img, description, datos, alt }) {
   // Estado para controlar la visibilidad de la modal
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +16,7 @@ function PersonCard({ name, profession, img, description, datos }) {
 
   return (
     <section className={styles.personCard}>
-      <img src={img} alt="Person" />
+      <img src={img} alt={alt} />
       <div className={styles.textContainer}>
         <div className={styles.text}>
           <h3 className={styles.name}>{name}</h3>

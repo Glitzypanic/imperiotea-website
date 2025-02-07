@@ -20,11 +20,23 @@ function Goals() {
       </div>
       <div className={styles.images}>
         <div className={styles.leftImages}>
-          <img src={image1} alt="" className={styles.leftImage} />
+          <img
+            src={image1}
+            alt="Un grupo de personas participando en un desfile, llevando una pancarta de 'Imperio TEA' decorada con manos de colores y piezas de rompecabezas, con texto que menciona apoyo para niños con autismo."
+            className={styles.leftImage}
+          />
         </div>
         <div className={styles.rightImages}>
-          <img src={image2} alt="" className={styles.rightImages1} />
-          <img src={image3} alt="" className={styles.rightImages2} />
+          <img
+            src={image2}
+            alt="Un grupo de personas posando juntas en una sala, con un banner de 'Imperio TEA' en el fondo que promueve apoyo para niños con autismo, y una mesa con algunos objetos en primer plano."
+            className={styles.rightImages1}
+          />
+          <img
+            src={image3}
+            alt="Una persona dando una presentación en un auditorio, con una pantalla que muestra una diapositiva con imágenes y el texto 'GRACIAS', y banners de 'CIPUUV' en el fondo, mientras varias personas observan desde sus asientos."
+            className={styles.rightImages2}
+          />
         </div>
       </div>
     </section>

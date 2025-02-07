@@ -92,6 +92,7 @@ function About() {
             name="Cecilia Díaz Guajardo"
             profession="Terapeuta Ocupacional especializada en infancia"
             img="/images/people/ceci.webp"
+            alt="Cecilia Díaz Guajardo, Terapeuta Ocupacional especializada en infancia, posando frente a una puerta blanca con un uniforme con estampado de Minnie Mouse."
             description={
               "Terapeuta Ocupacional - Universidad de Playa Ancha\n" +
               "Diplomado experto en autismo - Hyperpraxis\n" +
@@ -106,6 +107,7 @@ function About() {
             name="John Iglesias Pérez"
             profession="Fonoaudiólogo"
             img="\images\people\john.webp"
+            alt="John Iglesias Pérez, Fonoaudiólogo, posando frente a un fondo de pared blanca."
             description={
               "Formación en Condición del Espectro Autista\n" +
               "Formación en Apraxia del Habla Infantil\n" +
@@ -121,6 +123,7 @@ function About() {
             name="Macarena Escobar Coccio"
             profession="Fonoaudióloga"
             img="\images\people\macarena.webp"
+            alt="Macarena Escobar Cocio, Fonoaudióloga, posando frente a una puerta de madera con un uniforme decorado con personajes de Winnie the Pooh."
             description={
               "Evaluación, diagnóstico e intervención del lenguaje, habla y comunicación.\n" +
               "Enfocada en trastorno del Espectro Autista, inicio tardío y trastornos del lenguaje.\n" +
@@ -135,6 +138,7 @@ function About() {
             name="Ornella Maldonado"
             profession="Psicóloga Clínica"
             img="\images\people\ornella.webp"
+            alt="Ornella Maldonado, Psicóloga Clínica, posando frente a un fondo no visible."
             description={
               "Diplomada en psico diagnóstico Infanto-Juvenil\n" +
               "Acreditación Oficial Clínica Internacional ADOS-2\n" +
@@ -146,6 +150,7 @@ function About() {
             name="Maricela González"
             profession="Educadora Diferencial"
             img="\images\people\maricela.webp"
+            alt="Maricela González, Educadora Diferencial, posando frente a un fondo de madera con un espejo decorativo."
             description={
               "Psicopedagoga licensiada en eduación\n" +
               "Especialista en:\n" +
@@ -160,6 +165,7 @@ function About() {
             name="Javiera Villarroel López"
             profession="Terapeuta Ocupacional"
             img="\images\people\javiera.webp"
+            alt="Javiera Villarroel López, Terapeuta Ocupacional, posando frente a un fondo blanco."
             description={
               "Licenciada en Ocupación Humana\n" +
               "Certificada en:\n" +
@@ -177,6 +183,7 @@ function About() {
             name="Cesar Antonio Espinoza Gonzalez"
             profession="Presidente"
             img="\images\people\cesar.webp"
+            alt="Cesar Antonio Espinoza González, Presidente de Imperio TEA, posando frente a un fondo de madera."
             description={
               "+569 67045875\n" + "Presidente.Imperiotea@gmail.com\n"
             }

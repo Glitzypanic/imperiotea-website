@@ -46,7 +46,8 @@
     "date": "2024-06-10",
     "type": "Charla",
     "image": "/images/activities/anglo-american/anglo1.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Un grupo de personas posando juntas en una sala, con un banner de 'Imperio TEA' en el fondo que promueve apoyo para niños con autismo, y una mesa con algunos objetos en primer plano."
   },
   {
     "id": 6,
@@ -55,7 +56,8 @@
     "date": "2024-06-10",
     "type": "Actividad",
     "image": "/images/activities/banco-estado/banco-estado4.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Una mesa con varios juguetes educativos y de destreza, incluyendo rompecabezas, instrumentos musicales como maracas y xilófonos, y cajas de juegos como torres de apilamiento y actividades de ensartar."
   },
   {
     "id": 7,
@@ -64,7 +66,8 @@
     "date": "2024-06-10",
     "type": "Charla",
     "image": "/images/activities/curso-auxilio/curso-auxilio3.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Un grupo de personas posando frente a un banner de 'Imperio TEA' en una sala con techo alto y paneles de madera en la pared, con uno de ellos vestido con un chaleco reflectante."
   },
   {
     "id": 8,
@@ -73,7 +76,8 @@
     "date": "2024-06-10",
     "type": "Actividad",
     "image": "/images/activities/taller-fondoNacional/fondoNacional4.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Un niño corriendo sobre una serie de conos de colores dispuestos en el suelo, mientras varias personas observan desde el fondo en un patio al atardecer."
   },
   {
     "id": 9,
@@ -82,7 +86,8 @@
     "date": "2024-06-10",
     "type": "Actividad",
     "image": "/images/activities/parque-sayayin.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Un grupo de personas sentadas en sillas de plástico bajo una carpa, con globos de colores en el fondo y un letrero que dice 'Sayayin Entreteniciones'."
   },
   {
     "id": 10,
@@ -91,6 +96,7 @@
     "date": "2024-06-10",
     "type": "Actividad",
     "image": "/images/activities/charla-cftpucv/cftpucv10.webp",
-    "link": "/noticias/1"
+    "link": "/noticias/1",
+    "alt": "Un grupo grande de personas posando para una foto en una sala con paredes amarillas, con banderas chilenas en el fondo, una mesa con un equipo de sonido y un banner de 'CFTPUCV'."
   }
 ]
