@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import styles from "./App.module.css";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout.jsx";
 import HomePage from "./pages/homePage/Home.jsx";
@@ -23,6 +24,7 @@ function App() {
         <Route path="*" Component={Error404Page} />
       </Routes>
       <Analytics />
+      <SpeedInsights />
     </Layout>
   );
 }
