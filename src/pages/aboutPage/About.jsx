@@ -152,7 +152,7 @@ function About() {
             img="\images\people\maricela.webp"
             alt="Maricela González, Educadora Diferencial, posando frente a un fondo de madera con un espejo decorativo."
             description={
-              "Psicopedagoga licensiada en eduación\n" +
+              "Psicopedagoga licenciada en eduación\n" +
               "Especialista en:\n" +
               "Dificultades de aprendizaje - TEA - NEE\n" +
               "Adquisición a la lecto escritura y cálculo\n" +
