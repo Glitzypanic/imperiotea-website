@@ -11,7 +11,7 @@ export default function NewsList() {
   const newsPerPage = 6;
 
   // Invierte el orden del array
-  const reversedNewsData = [...newsData].reverse();
+  const reversedNewsData = [...newsData.newsData].reverse();
 
   const indexOfLastNews = currentPage * newsPerPage;
   const indexOfFirstNews = indexOfLastNews - newsPerPage;
@@ -27,12 +27,14 @@ export default function NewsList() {
         {currentNews.map((news) => (
           <NewsCard
             key={news.id}
+            id={news.id}
             type={news.type}
             title={news.title}
             date={news.date}
             description={news.description}
-            link={news.link}
+            content={news.content}
             image={news.image}
+            alt={news.alt}
           />
         ))}
       </div>

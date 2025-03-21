@@ -15,10 +15,9 @@ import valoresIcon from "/icons/valores.svg";
 import messageIcon from "/icons/Message.svg";
 import questionIcon from "/icons/Question.svg";
 
-import newsData from "../../data/news.json";
+import { newsData } from "../../data/newsData.js";
 
 function Home() {
-  const news = newsData[0];
   return (
     <main className={styles.home}>
       {/* Hero de la fundación */}
@@ -136,16 +135,24 @@ En Imperio TEA, valoramos cada voz y experiencia. Si deseas enviarnos una histor
       <section className={styles.noticeCards}>
         <h2>Ultimas Noticias</h2>
         <div className={styles.cards}>
-          <NoticeCard
-            key={news.id}
-            type={news.type}
-            title={news.title}
-            date={news.date}
-            description={news.description}
-            image={news.image}
-            alt={news.alt}
-            link={news.link}
-          />
+          {newsData
+            .slice()
+            .sort((a, b) => b.id - a.id) // Ordenar por ID de mayor a menor
+            .slice(0, 3) // Tomar solo las primeras 3 noticias
+            .map((news) => (
+              <NoticeCard
+                key={news.id}
+                id={news.id}
+                type={news.type}
+                title={news.title}
+                date={news.date}
+                description={news.description}
+                content={news.content}
+                image={news.image}
+                alt={news.alt}
+                link={news.link}
+              />
+            ))}
         </div>
       </section>
     </main>

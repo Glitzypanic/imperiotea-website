@@ -1,5 +1,6 @@
 .about {
-  padding-inline: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Hero section */
@@ -126,7 +127,7 @@
   display: grid;
   grid-template-columns: 1fr; /* Una columna para móviles */
   gap: 1rem; /* Espacio reducido para móviles */
-  max-width: 1200px;
+  max-width: 1750px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -189,13 +190,10 @@ strong {
 
 /* Media query para laptops y pantallas grandes (a partir de 1024px) */
 @media (min-width: 1024px) {
-  .about {
-    padding-inline: 2rem;
-  }
 
   .historyContainer {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1750px;
   }
 
   .heroContainer {
