@@ -1,6 +1,7 @@
 import styles from "./NewsCard.module.css";
+import { Link } from "react-router-dom";
 
-function NewsCard({ type, title, date, description, link, image, alt }) {
+function NewsCard({ type, title, date, description, image, alt, id }) {
   return (
     <div id="newsCard" className={styles.card}>
       <div className={styles.image}>
@@ -13,9 +14,9 @@ function NewsCard({ type, title, date, description, link, image, alt }) {
           <p className={styles.date}>{date}</p>
           <p className={styles.description}>{description}</p>
         </div>
-        <button href={link} className={styles.button}>
+        <Link to={`/news/${id}`} className={styles.button}>
           Leer más
-        </button>
+        </Link>
       </div>
     </div>
   );

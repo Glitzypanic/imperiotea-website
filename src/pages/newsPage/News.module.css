@@ -1,9 +1,5 @@
 .news {
-  padding-inline: 0.5rem;
+  width: 100%;
 }
 
-@media (min-width: 1024px) {
-  .news {
-    padding-inline: 2rem;
-  }
-}
+
