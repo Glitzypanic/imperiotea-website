@@ -11,6 +11,7 @@ import NewsPage from "./pages/newsPage/News.jsx";
 // import ResourcesPage from "./pages/resourcesPage/Resources";
 // import ContactPage from "./pages/contactPage/Contact";
 import Error404Page from "./pages/errorPage/Error404.jsx";
+import NewsDetail from "./pages/newsDetailPage/NewsDetail";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" exactly Component={HomePage} />
         <Route path="/about" exactly Component={AboutPage} />
         <Route path="/news" Component={NewsPage} />
+        <Route path="/news/:id" Component={NewsDetail} />
         {/* <Route path="/resources" Component={ResourcesPage} /> */}
         {/* <Route path="/contact" Component={ContactPage} /> */}
         <Route path="*" Component={Error404Page} />
