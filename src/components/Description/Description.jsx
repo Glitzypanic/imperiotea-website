@@ -1,5 +1,5 @@
 import styles from "./Description.module.css";
-import Image5 from "/backgrounds/descripcion.webp";
+import Image5 from "/backgrounds/descripcion.webp?url";
 
 function Description() {
   return (

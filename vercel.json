@@ -2,6 +2,21 @@
   "version": 2,
   "routes": [
     {
+      "src": "/images/(.*)",
+      "dest": "/images/$1",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" }
+    },
+    {
+      "src": "/icons/(.*)",
+      "dest": "/icons/$1",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" }
+    },
+    {
+      "src": "/backgrounds/(.*)",
+      "dest": "/backgrounds/$1",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" }
+    },
+    {
       "src": "/static/(.*)",
       "dest": "/static/$1",
       "headers": { "cache-control": "public, max-age=31536000, immutable" }
@@ -28,6 +43,10 @@
     {
       "src": "/(.*)\\.png",
       "dest": "/$1.png"
+    },
+    {
+      "src": "/(.*)\\.webp",
+      "dest": "/$1.webp"
     },
     {
       "src": "/(.*)\\.svg",

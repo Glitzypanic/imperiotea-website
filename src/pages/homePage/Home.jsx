@@ -9,11 +9,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
 // Imagenes
-import misionIcon from "/icons/mision.svg";
-import visionIcon from "/icons/vision.svg";
-import valoresIcon from "/icons/valores.svg";
-import messageIcon from "/icons/Message.svg";
-import questionIcon from "/icons/Question.svg";
+import misionIcon from "/icons/mision.svg?url";
+import visionIcon from "/icons/vision.svg?url";
+import valoresIcon from "/icons/valores.svg?url";
+import messageIcon from "/icons/Message.svg?url";
+import questionIcon from "/icons/Question.svg?url";
 
 import { newsData } from "../../data/newsData.js";
 

@@ -1,5 +1,5 @@
 import styles from "./Error.module.css";
-import imageNotFound from "/notFound.svg";
+import imageNotFound from "/notFound.svg?url";
 
 function Error404() {
   return (

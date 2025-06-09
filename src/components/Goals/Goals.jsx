@@ -1,7 +1,7 @@
 import styles from "./Goals.module.css";
-import image1 from "/images/activities/varias/varias7.webp";
-import image2 from "/images/activities/anglo-american/anglo1.webp";
-import image3 from "/images/activities/charla-cftpucv/cftpucv7.webp";
+import image1 from "/images/activities/varias/varias7.webp?url";
+import image2 from "/images/activities/anglo-american/anglo1.webp?url";
+import image3 from "/images/activities/charla-cftpucv/cftpucv7.webp?url";
 
 function Goals() {
   return (
