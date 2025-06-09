@@ -1,16 +1,7 @@
 import NewsCard from "../NewsCard/NewsCard";
 
 // Este componente recibe una noticia individual y la muestra
-function NoticeCard({
-  id,
-  type,
-  title,
-  date,
-  description,
-  content,
-  image,
-  alt,
-}) {
+function NoticeCard({ id, type, title, date, content, image, alt }) {
   console.log("NoticeCard recibió ID:", id); // Log para depuración
 
   return (
@@ -19,7 +10,6 @@ function NoticeCard({
       type={type}
       title={title}
       date={date}
-      description={description}
       content={content}
       image={image}
       alt={alt}
