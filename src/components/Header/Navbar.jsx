@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import logoImporio from "/logo-imperio1.png";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
@@ -18,10 +19,9 @@ function Navbar() {
   };
 
   return (
-    <>
-      <header className={styles.navbar}>
+    <>      <header className={styles.navbar}>
         <Link to="/">
-          <img src="/logo-imperio1.png" alt="Logo" height={140} width={120} />
+          <img src={logoImporio} alt="Logo" height={140} width={120} />
         </Link>
         <nav className={styles.nav}>
           <ul className={styles.navList}>

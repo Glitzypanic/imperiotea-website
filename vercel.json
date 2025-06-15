@@ -1,45 +1,10 @@
 {
-  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" }
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" }
-    },
-    {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/(.*)\\.js",
-      "dest": "/$1.js",
-      "headers": { "content-type": "application/javascript; charset=utf-8" }
-    },
-    {
-      "src": "/(.*)\\.css",
-      "dest": "/$1.css",
-      "headers": { "content-type": "text/css; charset=utf-8" }
-    },
-    {
-      "src": "/(.*)\\.png",
-      "dest": "/$1.png"
-    },
-    {
-      "src": "/(.*)\\.svg",
-      "dest": "/$1.svg"
-    },
-    {
-      "src": "/(.*)\\.jpg",
-      "dest": "/$1.jpg"
-    },
-    {
-      "src": "/(.*)\\.jpeg",
-      "dest": "/$1.jpeg"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",

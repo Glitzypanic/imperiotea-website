@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "./", // Rutas relativas
+  base: "/",
   server: {
     port: 3000,
     host: "0.0.0.0",
@@ -12,6 +12,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
+    assetsDir: "assets",
     rollupOptions: {
       input: {
         main: "/index.html",

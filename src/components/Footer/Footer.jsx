@@ -4,6 +4,7 @@ import { IoMapSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { MdOutlineMail } from "react-icons/md";
 import { SiGooglemaps } from "react-icons/si";
+import logoImporio from "/logo-imperio-1.png";
 import styles from "./Footer.module.css";
 
 function Footer() {
@@ -67,11 +68,10 @@ function Footer() {
     </div>
   );
 
-  return (
-    <footer className={styles.footer}>
+  return (    <footer className={styles.footer}>
       <Link to="/" onClick={scrollToTop}>
         <img
-          src="/logo-imperio-1.png"
+          src={logoImporio}
           alt="Logo Imperio Tea"
           className={styles.logo}
         />
