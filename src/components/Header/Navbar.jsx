@@ -19,7 +19,9 @@ function Navbar() {
   };
 
   return (
-    <>      <header className={styles.navbar}>
+    <>
+      {" "}
+      <header className={styles.navbar}>
         <Link to="/">
           <img src={logoImporio} alt="Logo" height={140} width={120} />
         </Link>

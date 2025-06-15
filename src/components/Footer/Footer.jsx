@@ -68,13 +68,10 @@ function Footer() {
     </div>
   );
 
-  return (    <footer className={styles.footer}>
+  return (
+    <footer className={styles.footer}>
       <Link to="/" onClick={scrollToTop}>
-        <img
-          src={logoImporio}
-          alt="Logo Imperio Tea"
-          className={styles.logo}
-        />
+        <img src={logoImporio} alt="Logo Imperio Tea" className={styles.logo} />
       </Link>
 
       <div className={styles.bottom}>
