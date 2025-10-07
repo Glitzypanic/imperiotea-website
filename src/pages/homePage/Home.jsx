@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import styles from "./Home.module.css";
 import Hero from "../../components/Hero/Hero";
 import Description from "../../components/Description/Description";
@@ -6,7 +6,7 @@ import InfoCard from "../../components/InfoCards/InfoCard";
 import NoticeCard from "../../components/NoticeCards/NoticeCard";
 import Goals from "../../components/Goals/Goals";
 import ContactCard from "../../components/ContactCard/ContactCard";
-import Modal from "../../components/Modal/Modal";
+// import Modal from "../../components/Modal/Modal";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
@@ -20,45 +20,45 @@ import questionIcon from "/icons/Question.svg";
 import { newsData } from "../../data/newsData.js";
 
 function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  useEffect(() => {
-    // Verificar si el usuario marcó "No mostrar de nuevo"
-    const dontShowUntil = localStorage.getItem("welcomeModalDontShow");
-    if (dontShowUntil) {
-      const expiryDate = new Date(dontShowUntil);
-      if (new Date() < expiryDate) {
-        return; // No mostrar el modal
-      } else {
-        // La fecha expiró, eliminar la entrada
-        localStorage.removeItem("welcomeModalDontShow");
-      }
-    }
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // useEffect(() => {
+  //   // Verificar si el usuario marcó "No mostrar de nuevo"
+  //   const dontShowUntil = localStorage.getItem("welcomeModalDontShow");
+  //   if (dontShowUntil) {
+  //     const expiryDate = new Date(dontShowUntil);
+  //     if (new Date() < expiryDate) {
+  //       return; // No mostrar el modal
+  //     } else {
+  //       // La fecha expiró, eliminar la entrada
+  //       localStorage.removeItem("welcomeModalDontShow");
+  //     }
+  //   }
 
-    // Verificar si el modal ya fue mostrado en esta sesión
-    const modalShown = sessionStorage.getItem("welcomeModalShown");
-    if (!modalShown) {
-      setIsModalOpen(true);
-    }
-  }, []);
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    // Marcar que el modal ya fue mostrado en esta sesión
-    sessionStorage.setItem("welcomeModalShown", "true");
-  };
+  // Verificar si el modal ya fue mostrado en esta sesión
+  //   const modalShown = sessionStorage.getItem("welcomeModalShown");
+  //   if (!modalShown) {
+  //     setIsModalOpen(true);
+  //   }
+  // }, []);
+  // const handleCloseModal = () => {
+  //   setIsModalOpen(false);
+  //   // Marcar que el modal ya fue mostrado en esta sesión
+  //   sessionStorage.setItem("welcomeModalShown", "true");
+  // };
 
-  const handleDontShowAgain = () => {
-    setIsModalOpen(false);
-    // Marcar que el modal no se muestre durante 7 días
-    const expiryDate = new Date();
-    expiryDate.setDate(expiryDate.getDate() + 7);
-    localStorage.setItem("welcomeModalDontShow", expiryDate.toISOString());
-    sessionStorage.setItem("welcomeModalShown", "true");
-  };
+  // const handleDontShowAgain = () => {
+  //   setIsModalOpen(false);
+  //   // Marcar que el modal no se muestre durante 7 días
+  //   const expiryDate = new Date();
+  //   expiryDate.setDate(expiryDate.getDate() + 7);
+  //   localStorage.setItem("welcomeModalDontShow", expiryDate.toISOString());
+  //   sessionStorage.setItem("welcomeModalShown", "true");
+  // };
 
   return (
     <main className={styles.home}>
       {/* Modal de bienvenida */}{" "}
-      <Modal
+      {/* <Modal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         title="🎉 Rifa Anual Imperio TEA 2025"
@@ -204,7 +204,7 @@ function Home() {
             No mostrar de nuevo por 7 días
           </button>
         </div>
-      </Modal>
+      </Modal> */}
       {/* Hero de la fundación */}
       <Hero />
       {/* Descripcion de la fundación */}

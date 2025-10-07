@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout.jsx";
-import RaffleFloatingButton from "./components/RaffleFloatingButton/RaffleFloatingButton.jsx";
+// import RaffleFloatingButton from "./components/RaffleFloatingButton/RaffleFloatingButton.jsx";
 import HomePage from "./pages/homePage/Home.jsx";
 import AboutPage from "./pages/aboutPage/About.jsx";
 import NewsPage from "./pages/newsPage/News.jsx";
@@ -30,7 +30,7 @@ function App() {
         <Analytics />
         <SpeedInsights />
       </Layout>
-      <RaffleFloatingButton />
+      {/* <RaffleFloatingButton /> */}
     </>
   );
 }
