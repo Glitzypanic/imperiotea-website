@@ -175,6 +175,24 @@ function About() {
               "Estrategias de integración sensorial\n"
             }
           />
+          <PersonCard
+            datos="Formación académica"
+            name="Jovanna Saavedra Athuan"
+            profession="Terapeuta Ocupacional"
+            img="\images\people\jovanna.webp"
+            alt="Jovanna Saavedra Athuan, Terapeuta Ocupacional, posando frente a un fondo de madera con un delantal celeste."
+            description={
+              "Licenciada en ciencias de la ocupación humana por la Universidad de Playa Ancha\n" +
+              "Diplomada en evaluación e intervención en trastornos del espectro autista - Consultorio Médico de neurociencia cognitiva y clínica Chile\n" +
+              "Diplomada en terapia ABA para autismo y otros trastornos del desarrollo - Corporación internacional líderes Latino América\n" +
+              "Diplomada en inclusión y diversidad - Fundación Telefónica y Fundación 'La Caixa'\n" +
+              "Certificada en aplicación de ADOS - 2 por el consultorio médico de neurociencia cognitiva y clínica Chile y en aplicación de IVADEC por COMPIN\n" +
+              "Con formación en:\n" +
+              "- Dificultades del Aprendizaje en autismo y TDAH a lo largo del ciclo vital\n" +
+              "- Desarrollo de la motricidad fina y grafomotricidad en la primera infancia\n" +
+              "- El juego como herramienta terapéutica\n"
+            }
+          />
         </div>
         <h3 className={styles.directiveSubtitle}>Directiva</h3>
         <div className={styles.personCardContainer}>
