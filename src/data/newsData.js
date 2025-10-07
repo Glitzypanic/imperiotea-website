@@ -2,7 +2,7 @@ export const newsData = [
   {
     id: 1,
     title: "Dia del niño",
-    content: "Contenido de la noticia 1",
+    content: "",
     date: "2024-06-10",
     type: "Actividad",
     image: "/images/activities/dia-niño/Dia-niño3.webp",
@@ -22,7 +22,7 @@ export const newsData = [
   {
     id: 2,
     title: "Fiestas patrias",
-    content: "Contenido de la noticia 2",
+    content: "",
     date: "2024-06-10",
     type: "Actividad",
     image: "/images/activities/fiestas-patrias/fiestas-patrias4.webp",
@@ -41,7 +41,7 @@ export const newsData = [
   {
     id: 3,
     title: "Taller de equinoterapia",
-    content: "Contenido de la noticia 3",
+    content: "",
     date: "2024-06-10",
     type: "Taller",
     image: "/images/activities/taller-equinoterapia/taller-equino4.webp",
@@ -59,7 +59,7 @@ export const newsData = [
   {
     id: 4,
     title: "Dia mundial de la concienciación del autismo",
-    content: "Contenido de la noticia 4",
+    content: "",
     date: "2024-06-10",
     type: "Actividad",
     image: "/images/activities/Dia-mundial-autismo/dia-autismo4.webp",
@@ -79,7 +79,7 @@ export const newsData = [
   {
     id: 5,
     title: "Proyecto Anglo American",
-    content: "Contenido de la noticia 5",
+    content: "",
     date: "2024-06-10",
     type: "Charla",
     image: "/images/activities/anglo-american/anglo1.webp",
@@ -94,7 +94,7 @@ export const newsData = [
   {
     id: 6,
     title: "Proyecto Banco estado",
-    content: "Contenido de la noticia 6",
+    content: "",
     date: "2024-06-10",
     type: "Actividad",
     image: "/images/activities/banco-estado/banco-estado4.webp",
@@ -111,7 +111,7 @@ export const newsData = [
   {
     id: 7,
     title: "Curso primeros auxilios",
-    content: "Contenido de la noticia 7",
+    content: "",
     date: "2024-06-10",
     type: "Charla",
     image: "/images/activities/curso-auxilio/curso-auxilio3.webp",
@@ -126,7 +126,7 @@ export const newsData = [
   {
     id: 8,
     title: "Taller 7% fondo nacional del desarrollo",
-    content: "Contenido de la noticia 8",
+    content: "",
     date: "2024-06-10",
     type: "Actividad",
     image: "/images/activities/taller-fondoNacional/fondoNacional4.webp",
@@ -142,7 +142,7 @@ export const newsData = [
   {
     id: 9,
     title: "Salida recreativa, Parque Sayayin",
-    content: "Contenido de la noticia 9",
+    content: "",
     date: "2024-06-10",
     type: "Actividad",
     image: "/images/activities/parque-sayayin.webp",
