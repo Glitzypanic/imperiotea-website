@@ -117,10 +117,19 @@
       "id": 12,
       "title": "Navidad 2025",
       "date": "2025-12-29",
-      "type": "Actividad",
-      "image": "/images/activities/navidad2025/navidad2.webp",
+      "type": "Mensaje",
+      "image": "/images/activities/navidad.webp",
       "link": "/noticias/1",
-      "alt": "Una persona posando con regalos de navidad"
+      "alt": "Una imagen que muestra un mensaje de navidad con un fondo azul, un arbol de navidad decorado y regalos, jusnto con un mensaje que dice 'Para esta época de amor y alegría, la inclusión es nuestro mayor deseo. ¡Feliz Navidad'"
+    },
+    {
+      "id": 13,
+      "title": "Año nuevo 2026",
+      "date": "2025-12-29",
+      "type": "Mensaje",
+      "image": "/images/activities/new-year/new1.webp",
+      "link": "/noticias/1",
+      "alt": "Una profesional de Imperio Tea sosteniendo regalos de navidad"
     }
   ]
 }
