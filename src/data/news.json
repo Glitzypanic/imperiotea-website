@@ -112,6 +112,15 @@
       "image": "/images/activities/pascua/File8.webp",
       "link": "/noticias/1",
       "alt": "Niño y adulto sonriendo con orejas de conejo, sosteniendo una bolsa de dulces de Pascua con conejitos y huevitos, en un ambiente colorido y festivo."
+    },
+    {
+      "id": 12,
+      "title": "Navidad 2025",
+      "date": "2025-12-29",
+      "type": "Actividad",
+      "image": "/images/activities/navidad2025/navidad2.webp",
+      "link": "/noticias/1",
+      "alt": "Una persona posando con regalos de navidad"
     }
   ]
 }

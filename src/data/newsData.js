@@ -196,4 +196,21 @@ export const newsData = [
     link: "/noticias/1",
     alt: "Niño y adulto sonriendo con orejas de conejo, sosteniendo una bolsa de dulces de Pascua con conejitos y huevitos, en un ambiente colorido y festivo.",
   },
+  {
+    id: 12,
+    title: "Navidad Imperio Tea 2025",
+    content:
+      "Como corporacion, nos sentimos orgullosos de nuestros profesionales. En estas fechas de celebración, queremos reconocer la labor que cada uno de ellos desempeña hacia nuest@s niñ@s. FELICADES EN ESTAS FIESTAS.",
+    date: "2025-12-29",
+    type: "Actividad",
+    image: "/images/activities/navidad2025/navidad1.webp",
+    imageCollage: [
+      "/images/activities/navidad2025/navidad1.webp",
+      "/images/activities/navidad2025/navidad2.webp",
+      "/images/activities/navidad2025/navidad3.webp",
+      "/images/activities/navidad2025/navidad4.webp",
+    ],
+    link: "/noticias/1",
+    alt: "Grupo de profesionales de Imperio TEA posando para una foto festiva, con gorros de Navidad y sonrisas, en un ambiente decorado con motivos navideños.",
+  },
 ];
