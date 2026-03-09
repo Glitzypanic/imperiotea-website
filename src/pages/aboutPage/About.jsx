@@ -177,6 +177,21 @@ function About() {
           />
           <PersonCard
             datos="Formación académica"
+            name="Marisol Fernanda Muñoz Zamora"
+            profession="Fonoaudióloga"
+            img="\images\people\marisol.webp"
+            alt="Marisol Muñoz, Fonoaudióloga, posando frente a un fondo blanco."
+            description={
+              "Evaluación, diagnóstico e intervención del lenguaje, habla y comunicación.\n" +
+              "⁠Acreditación clínica internacional ADOS-2 para la observación diagnóstica del Trastorno del Espectro Autista.\n" +
+              "Formación en detección temprana e intervención cognitiva, lingüística y comunicativa en TEA.\n" +
+              "Formación en Programa CLAP: comunicación, lenguaje, articulación y pensamiento.\n" +
+              "Diplomado en Neurociencia Educativa.\n" +
+              "⁠Capacitación en aplicación del Instrumento Diagnóstico para los Trastornos Específicos del Lenguaje (IDTEL).\n"
+            }
+          />
+          <PersonCard
+            datos="Formación académica"
             name="Jovanna Saavedra Athuan"
             profession="Terapeuta Ocupacional"
             img="\images\people\jovanna.webp"
