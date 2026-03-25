@@ -20,10 +20,13 @@ function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const subtitleStyle = "  *Solo para mensajes de WhatsApp*";
+
   const contactItems = [
     {
       icon: <FaWhatsapp className={styles.contactIcon} />,
       text: "+569 67045875",
+      subtitle: [subtitleStyle],
       url: "https://wa.me/56967045875",
     },
     {
@@ -102,10 +105,15 @@ function Footer() {
                     href={item.url}
                     rel="noopener noreferrer"
                     className={styles.contactItems}
-                  >
+                    > 
                     {item.icon}
                     {item.text}
                   </a>
+                  {subtitleStyle && (
+                    <span className={styles.subtitleStyle}>
+                      {item.subtitle}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>

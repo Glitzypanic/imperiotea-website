@@ -63,6 +63,7 @@
   width: fit-content;
 }
 
+
 .addressList {
   display: flex;
   flex-direction: column;
@@ -120,6 +121,11 @@
   gap: 5px;
   width: fit-content;
 }
+
+.subtitleStyle {
+  font-size: 0.8rem;
+  color: red;
+} 
 
 .mapButton {
   text-decoration: underline;
