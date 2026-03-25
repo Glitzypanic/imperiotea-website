@@ -136,6 +136,13 @@ strong {
   font-weight: 700;
 }
 
+.warning {
+  font-size: 0.9rem;
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
 /* Media query para tabletas (a partir de 768px) */
 @media (min-width: 768px) {
   .heroContainer {

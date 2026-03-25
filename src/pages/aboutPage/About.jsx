@@ -218,7 +218,8 @@ function About() {
             img="\images\people\cesar.webp"
             alt="Cesar Antonio Espinoza González, Presidente de Imperio TEA, posando frente a un fondo de madera."
             description={
-              "+569 67045875\n" + "Presidente.Imperiotea@gmail.com\n"
+              "*Solo mensajes al WhatsApp*\n "+"+569 1234 5678\n" +
+              "Presidente.Imperiotea@gmail.com\n"
             }
           />
         </div>
