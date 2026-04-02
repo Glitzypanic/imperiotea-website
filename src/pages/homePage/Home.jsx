@@ -69,7 +69,7 @@ function Home() {
           alt="Anuncio importante"
           style={{
             width: "100%",
-            maxWidth: "800px",
+            maxWidth: "700px",
             height: "auto",
             marginBottom: "15px",
             borderRadius: "8px",
