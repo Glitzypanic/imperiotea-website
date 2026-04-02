@@ -65,7 +65,7 @@ function Home() {
         title="Anuncio Importante 💙"
       >
         <img
-          src="public/abril-neurodiverso.jpeg"
+          src="/abril-neurodiverso.jpeg"
           alt="Anuncio importante"
           style={{
             width: "100%",
