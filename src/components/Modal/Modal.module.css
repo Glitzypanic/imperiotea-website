@@ -18,10 +18,7 @@
 /* Contenido del modal - basado en imagePopoverContent */
 .modalContent {
   position: relative;
-  max-width: 90%;
-  max-height: 90%;
-  width: 100%;
-  max-width: 600px;
+  width: fit-content;
   overflow: hidden;
   border-radius: 8px;
   background-color: #fff;
@@ -43,6 +40,9 @@
 
 /* Cuerpo del modal */
 .modalBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 25px;
   line-height: 1.6;
   font-size: 1.1rem;
@@ -54,21 +54,14 @@
 
 /* Estilos para enlaces de contacto */
 .modalBody a {
-  transition: all 0.3s ease;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .modalBody a:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.modalBody a:focus {
-  outline: 3px solid #4a90e2;
-  outline-offset: 2px;
-}
-
-.modalBody a:active {
-  transform: translateY(0);
+  background-color: #4a90e2;
+  color: white;
 }
 
 /* Botón de cerrar - basado en closeButton */

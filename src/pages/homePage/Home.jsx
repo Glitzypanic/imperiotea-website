@@ -6,8 +6,8 @@ import InfoCard from "../../components/InfoCards/InfoCard";
 import NoticeCard from "../../components/NoticeCards/NoticeCard";
 import Goals from "../../components/Goals/Goals";
 import ContactCard from "../../components/ContactCard/ContactCard";
-// import Modal from "../../components/Modal/Modal";
-// import { useState, useEffect } from "react";
+import Modal from "../../components/Modal/Modal";
+import { useState, useEffect } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 
@@ -21,31 +21,31 @@ import questionIcon from "/icons/Question.svg";
 import { newsData } from "../../data/newsData.js";
 
 function Home() {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-  // useEffect(() => {
-  //   // Verificar si el usuario marcó "No mostrar de nuevo"
-  //   const dontShowUntil = localStorage.getItem("welcomeModalDontShow");
-  //   if (dontShowUntil) {
-  //     const expiryDate = new Date(dontShowUntil);
-  //     if (new Date() < expiryDate) {
-  //       return; // No mostrar el modal
-  //     } else {
-  //       // La fecha expiró, eliminar la entrada
-  //       localStorage.removeItem("welcomeModalDontShow");
-  //     }
-  //   }
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    // Verificar si el usuario marcó "No mostrar de nuevo"
+    const dontShowUntil = localStorage.getItem("welcomeModalDontShow");
+    if (dontShowUntil) {
+      const expiryDate = new Date(dontShowUntil);
+      if (new Date() < expiryDate) {
+        return; // No mostrar el modal
+      } else {
+        // La fecha expiró, eliminar la entrada
+        localStorage.removeItem("welcomeModalDontShow");
+      }
+    }
 
-  //   // Verificar si el modal ya fue mostrado en esta sesión
-  //   const modalShown = sessionStorage.getItem("welcomeModalShown");
-  //   if (!modalShown) {
-  //     setIsModalOpen(true);
-  //   }
-  // }, []);
-  // const handleCloseModal = () => {
-  //   setIsModalOpen(false);
-  //   // Marcar que el modal ya fue mostrado en esta sesión
-  //   sessionStorage.setItem("welcomeModalShown", "true");
-  // };
+    // Verificar si el modal ya fue mostrado en esta sesión
+    const modalShown = sessionStorage.getItem("welcomeModalShown");
+    if (!modalShown) {
+      setIsModalOpen(true);
+    }
+  }, []);
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    // Marcar que el modal ya fue mostrado en esta sesión
+    sessionStorage.setItem("welcomeModalShown", "true");
+  };
 
   // const handleDontShowAgain = () => {
   //   setIsModalOpen(false);
@@ -58,27 +58,28 @@ function Home() {
 
   return (
     <main className={styles.home}>
-      {/* Modal de bienvenida */}{" "}
-      {/* <Modal
+      {/* Modal de bienvenida */}
+      <Modal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
-        title="📢 Aviso Importante!"
+        title="Anuncio Importante 💙"
       >
+        <img
+          src="public/abril-neurodiverso.jpeg"
+          alt="Anuncio importante"
+          style={{
+            width: "100%",
+            maxWidth: "800px",
+            height: "auto",
+            marginBottom: "15px",
+            borderRadius: "8px",
+          }}
+        />
 
-        <p style={{ marginBottom: "15px", lineHeight: "1.6" }}>
-          Informamos que nuestra corporación permanecerá{" "}
-          <strong>cerrada durante todo el mes de febrero</strong> debido a
-          trabajos de remodelación.
-        </p>
-
-        <p style={{ marginBottom: "15px", lineHeight: "1.6" }}>
-          <strong> No se realizarán sesiones hasta el mes de marzo.</strong>{" "}
-          Agradecemos su comprensión.
-          {""}
-        </p>
-
-        <strong>- Equipo de Imperio TEA 💙</strong>
-      </Modal> */}
+        <a href="/abril-neurodiverso.jpeg" download="/abril-neurodiverso.jpeg">
+          Descargar imagen para compartir 💙
+        </a>
+      </Modal>
       {/* Hero de la fundación */}
       <Hero />
       {/* Descripcion de la fundación */}
