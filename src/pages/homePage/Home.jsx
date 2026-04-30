@@ -23,23 +23,10 @@ import { newsData } from "../../data/newsData.js";
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   useEffect(() => {
-    // Verificar si el usuario marcó "No mostrar de nuevo"
-    const dontShowUntil = localStorage.getItem("welcomeModalDontShow");
-    if (dontShowUntil) {
-      const expiryDate = new Date(dontShowUntil);
-      if (new Date() < expiryDate) {
-        return; // No mostrar el modal
-      } else {
-        // La fecha expiró, eliminar la entrada
-        localStorage.removeItem("welcomeModalDontShow");
-      }
-    }
-
-    // Verificar si el modal ya fue mostrado en esta sesión
-    const modalShown = sessionStorage.getItem("welcomeModalShown");
-    if (!modalShown) {
-      setIsModalOpen(true);
-    }
+    // Modal desactivada: el anuncio finalizó, no abrir al cargar.
+    // Si desea reactivar la modal en el futuro, revertir este efecto
+    // o implementar la lógica condicional correspondiente.
+    return;
   }, []);
   const handleCloseModal = () => {
     setIsModalOpen(false);
