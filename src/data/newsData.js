@@ -1,5 +1,32 @@
 export const newsData = [
   {
+    id: 14,
+    title: "Día de la Niñez 2026",
+    description:
+      "Celebramos a nuestros niños y niñas con una entretenida jornada llena de regalos, sonrisas y momentos para compartir.",
+    content:
+      "En Corporación Imperio TEA celebramos el Día de la Niñez junto a nuestra comunidad. Fue una jornada de alegría, cariño y sorpresas, donde cada niño y niña recibió un regalo preparado especialmente para esta fecha.\n\nAgradecemos a las familias por acompañarnos y permitirnos seguir construyendo espacios de inclusión, respeto y felicidad.",
+    date: "2026-08-16",
+    type: "Actividad",
+    image: "/images/activities/dia-ninez-2026/07.webp",
+    imageCollage: [
+      "/images/activities/dia-ninez-2026/01.webp",
+      "/images/activities/dia-ninez-2026/02.webp",
+      "/images/activities/dia-ninez-2026/03.webp",
+      "/images/activities/dia-ninez-2026/04.webp",
+      "/images/activities/dia-ninez-2026/05.webp",
+      "/images/activities/dia-ninez-2026/06.webp",
+      "/images/activities/dia-ninez-2026/07.webp",
+      "/images/activities/dia-ninez-2026/08.webp",
+      "/images/activities/dia-ninez-2026/09.webp",
+      "/images/activities/dia-ninez-2026/10.webp",
+      "/images/activities/dia-ninez-2026/11.webp",
+      "/images/activities/dia-ninez-2026/12.webp",
+    ],
+    link: "/news/14",
+    alt: "Niño sonriendo mientras sostiene un regalo preparado para la celebración del Día de la Niñez en Corporación Imperio TEA.",
+  },
+  {
     id: 1,
     title: "Dia del niño",
     content: "",
