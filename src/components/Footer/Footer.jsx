@@ -9,7 +9,7 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   const openGoogleMaps = () => {
-    const address = "Pérez Canto #612, La Caleta, Valparaiso";
+    const address = "Pérez Canto #612, La Calera, Valparaíso";
     const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
       address
     )}`;

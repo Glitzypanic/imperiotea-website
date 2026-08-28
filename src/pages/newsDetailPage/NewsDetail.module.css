@@ -46,11 +46,21 @@
   text-align: center;
 }
 
-.imageContainer img {
+.imageContainer img,
+.imageContainer video {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer video {
+  display: block;
+  width: min(100%, 430px);
+  max-height: 75vh;
+  margin: 0 auto;
+  background-color: #111827;
+  object-fit: contain;
 }
 
 .content {

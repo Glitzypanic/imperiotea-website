@@ -37,6 +37,7 @@ export default function NewsList() {
             description={news.description}
             content={news.content}
             image={news.image}
+            video={news.video}
             alt={news.alt}
           />
         ))}

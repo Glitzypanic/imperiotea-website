@@ -103,7 +103,20 @@ function NewsDetail() {
         <p className={styles.date}>{news.date}</p>
       </div>
       <div className={styles.imageContainer}>
-        <img src={news.image} alt={news.alt} />
+        {news.video ? (
+          <video
+            src={news.video}
+            poster={news.image}
+            controls
+            playsInline
+            preload="metadata"
+            aria-label={`Video: ${news.title}`}
+          >
+            Tu navegador no puede reproducir este video.
+          </video>
+        ) : (
+          <img src={news.image} alt={news.alt} />
+        )}
       </div>
 
       <div className={styles.content}>

@@ -1,6 +1,18 @@
 {
   "newsData": [
     {
+      "id": 15,
+      "title": "¿Cómo llegar a Imperio TEA?",
+      "description": "Te mostramos la ruta para llegar fácilmente a nuestras instalaciones en La Calera, Valparaíso.",
+      "content": "Nuestra dirección es Arturo Pérez Canto #612, La Calera, Valparaíso. Revisa el video para reconocer el recorrido y ubicar nuestra sede con mayor facilidad. ¡Te esperamos!",
+      "date": "2026-08-25",
+      "type": "Información",
+      "image": "/images/activities/como-llegar-imperio-tea.webp",
+      "video": "/videos/como-llegar-imperio-tea.mp4",
+      "link": "/news/15",
+      "alt": "Vista de la ruta para llegar a las instalaciones de Corporación Imperio TEA."
+    },
+    {
       "id": 14,
       "title": "Día de la Niñez 2026",
       "description": "Celebramos a nuestros niños y niñas con una entretenida jornada llena de regalos, sonrisas y momentos para compartir.",
